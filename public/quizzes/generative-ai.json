@@ -1,0 +1,62 @@
+{
+  "docId": "generative-ai",
+  "title": "生成AIの仕組み",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "大規模言語モデル（LLM）の学習に使われるのは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "画像データのみ",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "大量のテキストデータ",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "音声データのみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "プログラムコードのみ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "LLMは、インターネット上の文章や書籍など、大量のテキストデータを学習して言語のパターンを理解します。"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "question": "トークンとは何を指しますか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "AIの料金単位",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "テキストを処理する最小単位",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "プログラムの命令",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "データの保存形式",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "トークンは、AIがテキストを処理する際の最小単位で、単語や文字の一部などを表します。"
+    }
+  ]
+}

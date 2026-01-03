@@ -1,0 +1,146 @@
+{
+  "docId": "sample-chapter",
+  "title": "Markdownナレッジフレームワーク サンプルクイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "Markdownで見出しを作成する際に使用する記号はどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "*",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "#",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "-",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": ">",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Markdownでは#記号を使用して見出しを作成します。#の数によって見出しレベル（h1〜h6）が決まります。"
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "question": "このフレームワークで使用可能な機能として正しいものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "自動的なナビゲーション生成",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "進捗追跡システム",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "データベース連携",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "インタラクティブクイズ",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "フレームワークには自動ナビゲーション、進捗追跡、クイズ機能が含まれています。データベースは必要なく、ファイルベースで動作します。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "Markdownでコードブロックを作成するにはどの記号を使用しますか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "```",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "'''",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "---",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "===",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Markdownでは```（バッククォート3つ）を使用してコードブロックを作成します。言語名を指定することでシンタックスハイライトも可能です。"
+    },
+    {
+      "id": "q4",
+      "type": "single",
+      "question": "このフレームワークが静的サイト生成に使用しているツールはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "Webpack",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Vite",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Parcel",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Rollup",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "このフレームワークはViteを使用しており、高速な開発サーバーと効率的な本番ビルドを提供します。"
+    },
+    {
+      "id": "q5",
+      "type": "multiple",
+      "question": "Markdownでリストを作成する方法として正しいものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "- 項目名（ハイフン）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "* 項目名（アスタリスク）",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "+ 項目名（プラス）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "@ 項目名（アットマーク）",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Markdownでは-、*、+のいずれを使用しても箇条書きリストを作成できます。番号付きリストには1. 2. 3.を使用します。"
+    }
+  ]
+}

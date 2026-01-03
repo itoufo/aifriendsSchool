@@ -1,0 +1,62 @@
+{
+  "docId": "ai-literacy",
+  "title": "AIリテラシー入門",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "AIリテラシーとは何を指しますか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "プログラミング能力",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "AIを理解し適切に活用する能力",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "数学の知識",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "コンピュータの操作技術",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "AIリテラシーとは、AIの基本的な仕組みを理解し、その可能性と限界を認識した上で、適切に活用できる能力を指します。"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "question": "生成AIの主な特徴は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "データを分析するだけ",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "新しいコンテンツを作り出すこと",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "計算を高速化すること",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "データを保存すること",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "生成AIの最大の特徴は、学習したパターンから新しいテキスト、画像、音声などのコンテンツを生成できることです。"
+    }
+  ]
+}

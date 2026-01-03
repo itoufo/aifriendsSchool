@@ -1,0 +1,118 @@
+{
+  "docId": "introduction",
+  "title": "フレームワーク概要クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "Markdown Knowledge Frameworkの主要なコンテンツ形式は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "HTMLファイル",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Markdownファイル",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "JSONファイル",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "XMLファイル",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "このフレームワークは、簡単なテキスト形式でコンテンツを作成できるMarkdownファイルを中心に構築されています。"
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "question": "このフレームワークが提供する機能として正しいものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "進捗追跡システム",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "インタラクティブなクイズ",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "データベース接続",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ノートとブックマーク機能",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "フレームワークには進捗追跡、クイズ機能、ノートとブックマーク機能が含まれていますが、データベースは不要でファイルベースです。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "このフレームワークの主な利点として間違っているものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "簡単なコンテンツ管理",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "高速なパフォーマンス",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "複雑なサーバー設定が必要",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "レスポンシブデザイン",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "このフレームワークは静的ファイルにビルドされるため、複雑なサーバー設定は不要です。"
+    },
+    {
+      "id": "q4",
+      "type": "single",
+      "question": "このフレームワークが適している用途として最も適切でないものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "ドキュメントサイト",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "教育コンテンツ",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "リアルタイム取引システム",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "技術ガイド",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "このフレームワークは静的コンテンツ配信に特化しており、リアルタイム取引のような動的システムには適していません。"
+    }
+  ]
+}

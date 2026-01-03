@@ -1,0 +1,23 @@
+{
+  "quizzes": [
+    "ai-literacy",
+    "generative-ai",
+    "ai-ethics",
+    "prompt-basics",
+    "ai-practice",
+    "cot",
+    "info-organization",
+    "project-management",
+    "automation",
+    "business-problem",
+    "paic",
+    "pbl",
+    "portfolio",
+    "ethics-week",
+    "self-coaching"
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-03"
+  }
+}

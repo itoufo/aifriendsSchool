@@ -1,0 +1,43 @@
+{
+  "docId": "creating-content",
+  "title": "Content Creation Quiz",
+  "description": "Test your understanding of creating engaging Markdown content",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Which Markdown syntax creates a code block with syntax highlighting?",
+      "options": [
+        "`code here`",
+        "```language\\ncode here\\n```",
+        "<code>code here</code>",
+        "    code here"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Use triple backticks with the language name (e.g., ```javascript) to create syntax-highlighted code blocks."
+    },
+    {
+      "id": "q2",
+      "question": "What is the recommended approach for organizing Markdown files?",
+      "options": [
+        "Put all files in the root docs directory",
+        "Use random file names",
+        "Organize in numbered directories with descriptive names",
+        "Store files outside the docs directory"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Organize files in numbered directories (01_getting-started, 02_basic-usage) with clear, descriptive names for better navigation and maintenance."
+    },
+    {
+      "id": "q3",
+      "question": "How should you link to other documents within your content?",
+      "options": [
+        "Use absolute URLs only",
+        "Use relative paths like ../01_getting-started/introduction.md",
+        "Use document IDs only",
+        "Hard-code full file paths"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Use relative paths to link between documents, which keeps links working even when the site structure changes or when deployed to different domains."
+    }
+  ]
+}

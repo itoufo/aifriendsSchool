@@ -1,0 +1,142 @@
+.bookmarks-list-container {
+  padding: 2rem 0;
+}
+
+.bookmarks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.bookmark-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 2px solid #e5e7eb;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookmark-card:hover {
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+  transform: translateY(-2px);
+}
+
+.bookmark-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.bookmark-card-header h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  color: #1e293b;
+  cursor: pointer;
+  flex: 1;
+  transition: color 0.2s;
+}
+
+.bookmark-card-header h3:hover {
+  color: #2563eb;
+}
+
+.bookmark-delete-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: #fee2e2;
+  color: #ef4444;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.bookmark-delete-btn:hover {
+  background: #ef4444;
+  color: white;
+  transform: scale(1.1);
+}
+
+.bookmark-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.bookmark-date {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.bookmark-card-note {
+  margin: 0 0 1rem 0;
+  color: #475569;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bookmark-go-btn {
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: auto;
+}
+
+.bookmark-go-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateX(2px);
+}
+
+.bookmarks-list-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #94a3b8;
+}
+
+.bookmarks-list-empty .empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.bookmarks-list-empty h3 {
+  margin: 0 0 0.5rem 0;
+  color: #64748b;
+  font-size: 1.25rem;
+}
+
+.bookmarks-list-empty p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .bookmarks-grid {
+    grid-template-columns: 1fr;
+  }
+}

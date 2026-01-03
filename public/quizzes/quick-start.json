@@ -1,0 +1,146 @@
+{
+  "docId": "quick-start",
+  "title": "クイックスタートガイド クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "開発サーバーを起動するコマンドはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "npm start",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "npm run dev",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "npm run serve",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "npm develop",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "'npm run dev'を使用してVite開発サーバーをホットリロード機能付きで起動します。"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "question": "Markdownコンテンツファイルはどこに配置すべきですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "src/docs/",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "public/docs/",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "content/",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "markdown/",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Markdownファイルは静的アセットとして提供され、アプリケーションからアクセスできるよう、public/docs/ディレクトリに配置します。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "新しいMarkdownファイルを作成した後、他に何をする必要がありますか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "開発サーバーを再起動する",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "npm run buildを実行する",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "curriculum.tsに登録する",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "対応するCSSファイルを作成する",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "新しいドキュメントをナビゲーションに表示するため、src/data/curriculum.tsに正しいid、title、pathで追加する必要があります。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "推奨される前提条件として正しいものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "Node.js 18+",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Python 3.8+",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "npmまたはyarn",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Docker",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "このフレームワークにはNode.js 18+とnpm/yarnが必要です。Markdownの基本知識もあると良いでしょう。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "プロダクション用にビルドするコマンドはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "npm run dev",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "npm run build",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "npm run preview",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "npm run lint",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "'npm run build'でプロダクション用の静的ファイルを生成します。'npm run preview'はビルド済みファイルのプレビュー用です。"
+    }
+  ]
+}
