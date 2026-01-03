@@ -1,0 +1,286 @@
+{
+  "docId": "human-skills-integration",
+  "title": "ヒューマンスキルとの融合 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "MECE原則とAIを組み合わせた情報整理の主な利点として最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "処理速度の向上のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "漏れとダブりの防止＋詳細分析の自動化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "コストの削減のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "人間の作業の完全代替",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "MECE原則（漏れなく、ダブりなく）とAIを組み合わせることで、論理的な分類構造を保ちながら、各カテゴリーの詳細分析をAIが自動化できるため、両方の利点を活かせます。"
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "question": "アイゼンハワーマトリックスとAIを組み合わせたタスク管理で、AIが担うべき役割として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "各タスクのビジネスインパクト評価",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "実行に必要な時間とリソース見積もり",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "個人の価値観に基づく最終判断",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "他者への委任可能性の判定",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AIは客観的な評価（ビジネスインパクト、時間見積もり、委任可能性）を担い、個人の価値観や戦略的判断は人間が行うという役割分担が効果的です。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "ソクラテス式問答法をAIと組み合わせる際の主な目的は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "AIの処理能力を最大化する",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "段階的質問により思考を深める",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "データベースを効率的に検索する",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "プロンプトの文字数を増やす",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "ソクラテス式問答法は、段階的な質問を通じて思考を深化させ、前提を検証し、より本質的な理解に到達する手法です。AIとの対話でこれを活用することで思考拡張が可能です。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "確証バイアス対策としてのAI活用で有効な方法として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "自分の意見への反論を生成させる",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "多様な立場からの視点を提供させる",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "自分の意見のみを強化させる",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "代替案の提示を求める",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "確証バイアス対策には、反対意見の生成、多様な視点の提供、代替案の提示が有効です。自分の意見のみを強化することは確証バイアスを助長します。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "三段論法の検証でAIが最も有効に活用できる部分はどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "感情的な判断の妥当性検証",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "論理構造の分析と矛盾の指摘",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "文章の美しさの評価",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "個人的な体験の共有",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "AIは論理的な構造分析、前提と結論の関係性チェック、論理的矛盾の発見に優れており、三段論法の検証において客観的な分析を提供できます。"
+    },
+    {
+      "id": "q6",
+      "type": "single",
+      "question": "5W1H + So What分析において、「So What（だから何？）」の部分で最も重要な人間の役割は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "データの収集",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "事実の確認",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "戦略的含意の判断と行動決定",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "文法の修正",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "「So What」の部分は、分析結果から戦略的な含意を導き出し、具体的な行動に結びつける判断が求められ、これは人間の戦略的思考力が最も重要な領域です。"
+    },
+    {
+      "id": "q7",
+      "type": "multiple",
+      "question": "AI生成文章のリライト・改良プロセスで人間が担うべき役割として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "個人的な視点・経験談の追加",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "独自の見解・提案の追加",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "文法的な誤りの完全修正",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "対象読者に合わせた最適化",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "人間は個性の注入（個人的視点、独自見解）と対象読者への最適化を担います。文法修正はAIも得意とする分野で、人間固有の役割ではありません。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "メタ認知を活用したAI協働学習で最も重要な要素は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "使用ツールの種類を増やす",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "思考プロセスの可視化と振り返り",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "プロンプトの文字数を最大化する",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "AIとの対話時間を長くする",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "メタ認知では、自分の思考プロセスを客観的に観察し、改善点を見つけることが重要です。AI協働においても、思考の可視化と振り返りが継続的な成長の鍵となります。"
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "question": "チーム学習促進でAIと人間の役割分担として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "AI：論点の整理・構造化",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "人間：文脈的理解",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "AI：最終的な責任判断",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "人間：価値観の反映",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AIは客観的な整理・分析を担い、人間は文脈理解、価値観の反映、最終的な責任判断を担うという役割分担が効果的です。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "AI時代において最も価値のある人材の特徴として最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "AIツールを使わずに全て手作業で行う",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "AIの結果を無批判に受け入れる",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "AIを活用しつつ人間固有の判断・創造・責任を担う",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "技術的な知識のみを重視する",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "AI時代の価値ある人材は、AIツールを効果的に活用しながら、人間にしかできない創造性、倫理的判断、責任ある意思決定を担える人です。技術と人間性の両方が重要です。"
+    }
+  ]
+}

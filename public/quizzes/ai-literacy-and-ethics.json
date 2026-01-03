@@ -1,0 +1,230 @@
+{
+  "docId": "ai-literacy-and-ethics",
+  "title": "AIリテラシーと倫理 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "Transformerモデルの主な革新性として最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "逐次処理による高速化",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Self-Attentionメカニズムによる並列処理",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "教師あり学習のみに特化",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "画像処理専用の設計",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Transformerモデルは2017年に発表され、RNNの逐次処理の限界を克服するためにSelf-Attentionメカニズムを導入しました。これにより並列処理が可能となり、長い文脈の理解と高速な学習を実現しました。"
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "question": "AIのハルシネーション（幻覚）現象を防ぐための対策として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "重要な情報は必ず一次ソースで確認する",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "複数の情報源との照合を行う",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "AIの回答を無批判に受け入れる",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ファクトチェックサイトを活用する",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "ハルシネーション対策には、一次ソース確認、複数情報源との照合、ファクトチェックサイトの活用が重要です。AIの回答を無批判に受け入れることは危険であり、常に批判的思考を働かせる必要があります。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "EU AI Act（EU AI規則）における主要な特徴として最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "すべてのAIシステムを一律に禁止",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "リスクベースでのAIシステム分類と規制",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "AI開発企業の完全な自主規制",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "個人利用AIのみを対象とした規制",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "EU AI Actは世界初の包括的なAI規則で、AIシステムをリスクレベル（最小リスク、限定リスク、高リスク、受け入れ不可能リスク）に分類し、それぞれに応じた規制を設けています。"
+    },
+    {
+      "id": "q4",
+      "type": "single",
+      "question": "主要なAIモデルの特徴として間違っているものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "GPT：OpenAI開発、自然言語生成に特化",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Gemini：Google開発、マルチモーダル対応",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Claude：Anthropic開発、安全性重視",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Claude：Meta開発、画像生成専用",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "ClaudeはAnthropic社が開発したAIモデルで、安全性と有用性を重視し、長文処理や複雑な推論を得意としています。Meta社の開発ではなく、画像生成専用でもありません。"
+    },
+    {
+      "id": "q5",
+      "type": "multiple",
+      "question": "ディープフェイクを識別するための技術的特徴として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "顔の境界線の不自然さ",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "瞬きの頻度の異常",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "音声の品質の高さ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "光の当たり方の矛盾",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "ディープフェイクの検出には、顔の境界線の不自然さ、瞬きパターンの異常、光の当たり方の矛盾などの技術的特徴を確認することが重要です。音声品質の高さはディープフェイクの特徴ではありません。"
+    },
+    {
+      "id": "q6",
+      "type": "single",
+      "question": "AIの学習データに含まれるバイアスの問題として最も深刻でないものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "性別による職業の偏見",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "人種による評価の偏向",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "計算処理速度の違い",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "地域による価値観の偏り",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "計算処理速度の違いはバイアス問題ではなく技術的性能の問題です。バイアスの主な問題は、性別・人種・地域による偏見が学習データに含まれ、AIの判断に不当な影響を与えることです。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "AI技術の階層構造について、最も包括的な概念から最も具体的な技術への正しい順序はどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "機械学習 → 人工知能 → 深層学習 → Transformer",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "人工知能 → 機械学習 → 深層学習 → Transformer",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "深層学習 → 機械学習 → 人工知能 → Transformer",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Transformer → 深層学習 → 機械学習 → 人工知能",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "AI技術は階層構造になっており、最も包括的な「人工知能」の下に「機械学習」があり、その一部として「深層学習」があり、深層学習の一種として「Transformer」があります。"
+    },
+    {
+      "id": "q8",
+      "type": "multiple",
+      "question": "AI活用における個人情報保護の観点で注意すべき点として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "入力したデータの取り扱い方針を確認する",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "機密情報をAIツールに入力しない",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "生成されたコンテンツには著作権が発生しない",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "第三者の個人情報は同意なく処理可能",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "AI活用時は入力データの取り扱い方針確認と機密情報の入力回避が重要です。生成コンテンツの著作権や第三者の個人情報の取り扱いには複雑な法的問題があり、慎重な対応が必要です。"
+    }
+  ]
+}

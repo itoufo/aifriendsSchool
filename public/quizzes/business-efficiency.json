@@ -1,0 +1,230 @@
+{
+  "docId": "business-efficiency",
+  "title": "業務効率化の実践 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "議事録の自動生成ワークフローで最初に行うべきステップはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "参加者への事前アンケート",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "音声の転写・文字起こし",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "会議資料の要約",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "次回会議の日程調整",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "議事録の自動生成では、まず会議の音声を文字起こし（転写）することから始めます。その後、転写テキストを構造化して議事録として整理します。"
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "question": "Notion AIの主な活用方法として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "ページ全体の要約生成",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "既存コンテンツの改善提案",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "動画ファイルの編集",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "データベースからのインサイト抽出",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Notion AIは、ページの要約生成、コンテンツ改善提案、データベース分析によるインサイト抽出が主な活用方法です。動画編集機能は提供していません。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "Midjourneyを使った画像生成で、ビジネス用途に最も適したアスペクト比の指定はどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "--ar 1:1",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "--ar 16:9",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "--ar 9:16",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "--ar 3:4",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "--ar 16:9はプレゼンテーションスライドや一般的なディスプレイに適した横長の形式で、ビジネス用途に最も汎用性があります。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "メール作成の効率化で含めるべき要素として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "メール種別の明確化",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "対象読者の特定",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "添付ファイルの暗号化",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "適切なトーンの指定",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "メール作成の効率化には、メール種別・対象読者・トーンの明確化が重要です。添付ファイルの暗号化は技術的なセキュリティ対策であり、AI支援による効率化の要素ではありません。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "画像生成AI別の特性で間違っているものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "Midjourney：アーティスティック、高品質",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "DALL-E 3：テキスト理解、指示への忠実性",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Stable Diffusion：カスタマイズ性、コスト効率",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Midjourney：プログラミング専用、コード生成特化",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Midjourneyはプログラミング専用ツールではありません。アーティスティックで高品質な画像生成に特化したツールです。コード生成はAIの別の分野です。"
+    },
+    {
+      "id": "q6",
+      "type": "single",
+      "question": "音声転写ツールの設定で最も重要なものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "音声ファイルの圧縮率",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "話者識別機能の有効化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "バックグラウンド音楽の追加",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "字幕の色彩設定",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "議事録作成において、誰が何を発言したかを識別するため、話者識別機能の有効化が最も重要です。これにより発言者ごとに整理された議事録を作成できます。"
+    },
+    {
+      "id": "q7",
+      "type": "multiple",
+      "question": "業務効率化のKPI測定で重要な指標として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "時間短縮率",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "誤字脱字の減少",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "使用電力量",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "1日あたりの処理件数増加",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "効率化のKPIとして、時間短縮率、品質向上（誤字脱字減少）、生産性向上（処理件数増加）が重要です。使用電力量は直接的な効率化指標ではありません。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "プレゼンテーション資料用の画像生成で最も重要な要素はどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "キャラクターの詳細設定",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "企業ブランドカラーとの統一",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "アニメーション効果",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "背景音楽の選択",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "ビジネスプレゼンテーションでは、企業のブランドイメージとの一貫性が重要です。企業カラーとの統一により、プロフェッショナルで統一感のある資料を作成できます。"
+    }
+  ]
+}

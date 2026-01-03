@@ -4,9 +4,9 @@
 export const AppConfig = {
   // アプリケーション基本情報
   app: {
-    name: 'Knowledge Framework',
+    name: 'AI Friends School',
     version: '1.0.0',
-    description: 'Markdown駆動の高速ナレッジ共有システム',
+    description: '包括的AIスクールカリキュラム - 初心者から経営者まで5段階の体系的AI教育',
   },
 
   // パス設定
@@ -18,34 +18,34 @@ export const AppConfig = {
 
   // クイズ設定
   quiz: {
-    passThreshold: 80,       // 合格ライン（%）
+    passThreshold: 70,       // 合格ライン（%）
     enableCache: true,       // クイズのキャッシュを有効化
     showExplanation: true,   // 解説を表示
   },
 
   // 進捗管理設定
   progress: {
-    storageKey: 'ai-school-progress',
-    statsKey: 'ai-school-stats',
+    storageKey: 'aifriends-school-progress',
+    statsKey: 'aifriends-school-stats',
     autoSave: true,
   },
 
   // ノート設定
   notes: {
-    storageKey: 'ai-school-notes',
-    bookmarksKey: 'ai-school-bookmarks',
+    storageKey: 'aifriends-school-notes',
+    bookmarksKey: 'aifriends-school-bookmarks',
     maxNoteLength: 5000,     // ノートの最大文字数
   },
 
   // ブランディング設定
   branding: {
-    title: 'AI活用人材育成カリキュラム',       // トップバーのタイトル
+    title: 'AI Friends School - 包括的AIスクールカリキュラム',       // トップバーのタイトル
     logo: {
-      src: '/docs/images/common/haiia_logo-1-300x297.png',  // ロゴ画像のパス
-      alt: '一般社団法人 健全AI教育協会',                      // ロゴのalt属性
+      src: '/docs/images/common/ai-friends-logo.png',  // ロゴ画像のパス
+      alt: 'AI Friends School',                        // ロゴのalt属性
     },
     footer: {
-      text: '©健全AI教育協会',              // フッターのテキスト
+      text: '© 2024 AI Friends School - 真に稼げる人材、そして未来を創造できる人材を育成',
     },
   },
 

@@ -1,0 +1,240 @@
+{
+  "docId": "prompt-engineering-basics",
+  "title": "プロンプトエンジニアリング入門 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple",
+      "question": "良いプロンプトの5要素として正しいものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "役割（Role）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "指示（Instruction）",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "価格（Price）",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "文脈（Context）",
+          "isCorrect": true
+        },
+        {
+          "id": "e",
+          "text": "制約（Constraints）",
+          "isCorrect": true
+        },
+        {
+          "id": "f",
+          "text": "出力形式（Output Format）",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "良いプロンプトの5要素は、役割・指示・文脈・制約・出力形式です。これらを明確に指定することで、AIから期待する回答を得やすくなります。価格は関係ありません。"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "question": "以下のプロンプトで最も改善が必要な問題点はどれですか？「いい感じの企画書を作って」",
+      "options": [
+        {
+          "id": "a",
+          "text": "文字数が短すぎる",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "指示が曖昧で具体性がない",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "敬語が使われていない",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "専門用語が多すぎる",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "このプロンプトの最大の問題は曖昧さです。「いい感じ」「企画書」が具体的でなく、目的・対象・内容・形式が不明確です。具体的な条件と出力形式を明示する必要があります。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "Chain of Thought（思考連鎖）手法の主な目的として最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "プロンプトの文字数を増やす",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "複雑な問題を段階的に解決させる",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "AIの処理速度を向上させる",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "多言語対応を実現する",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Chain of Thoughtは、複雑な問題を段階的に分解し、AIに思考プロセスを明示させることで、より論理的で正確な回答を得るための手法です。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "ChatGPTの特性として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "創造性に優れている",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "対話の自然さが特徴",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "常に最新の情報を持っている",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "コーディング支援が可能",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "ChatGPTは創造性、対話の自然さ、コーディング支援に優れていますが、学習データのカットオフがあるため常に最新情報を持っているわけではありません。情報の正確性確認が重要です。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "Few-shot Learning手法の説明として最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "短時間でAIを学習させる手法",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "例示による学習効果の活用",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "少ないデータで画像生成する手法",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "複数のAIを同時に使用する手法",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Few-shot Learningは、プロンプト内で具体例を示すことで、AIに期待するタスクや出力形式を理解させる手法です。例示により学習効果を高めることができます。"
+    },
+    {
+      "id": "q6",
+      "type": "single",
+      "question": "情報収集用プロンプトで必ず含めるべき要素として最も重要なものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "検索キーワード",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "情報源の明記要求",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "文字数制限",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "画像の挿入指示",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "情報収集において最も重要なのは、情報源の明記を要求することです。これにより後で事実確認やさらなる調査が可能になり、情報の信頼性を検証できます。"
+    },
+    {
+      "id": "q7",
+      "type": "multiple",
+      "question": "効果的な翻訳プロンプトの要素として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "対象読者の明確化",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "文書種別の指定",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "完全な逐語訳の要求",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "文脈に応じた意訳の許可",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "効果的な翻訳には、対象読者の明確化、文書種別の指定、文脈に応じた意訳が重要です。完全な逐語訳は読みにくく、自然な翻訳の妨げになる場合があります。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "SCAMPER法をAIアイデア発想に活用する際の説明として正しくないものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "S（代替）：何を代わりに使えるか？",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "C（結合）：何と組み合わせられるか？",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "A（適応）：何を真似できるか？",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "P（転用）：価格をどう設定するか？",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "SCAMPER法のP（転用）は「他の用途はあるか？」を意味します。価格設定は含まれません。SCAMPERは既存のアイデアを様々な角度から変化させて新しいアイデアを生み出す創造技法です。"
+    }
+  ]
+}
