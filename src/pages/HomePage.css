@@ -63,8 +63,8 @@
 }
 
 .hero-logo {
-  width: 120px;
-  height: 120px;
+  max-width: 280px;
+  height: auto;
   margin-bottom: 2rem;
   animation: float 3s ease-in-out infinite;
   filter: drop-shadow(0 10px 30px rgba(56, 189, 248, 0.4));
@@ -747,8 +747,7 @@
   }
 
   .hero-logo {
-    width: 80px;
-    height: 80px;
+    max-width: 200px;
   }
 }
 
