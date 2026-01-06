@@ -1,0 +1,286 @@
+{
+  "docId": "ai-business-strategy",
+  "title": "AIビジネス戦略・事業創造 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple",
+      "question": "AI活用による競争優位性の持続可能な源泉として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "顧客データの蓄積と活用",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "単純な業務自動化のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "ネットワーク効果を持つエコシステム構築",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "独自の技術・ノウハウ蓄積",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "持続可能な競争優位には、顧客データの蓄積、ネットワーク効果、独自技術の蓄積が重要です。単純な自動化は他社も模倣しやすいため持続性が低いです。"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "question": "データ戦略における成熟度レベルで最も高度な段階の特徴は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "サイロ化されたデータと手動分析",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "統合データ基盤とKPIダッシュボード",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "AI駆動の意思決定と継続的学習",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "定期的なレポート作成",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "データ戦略の最高成熟度は、AI駆動の意思決定、自動最適化、継続学習を特徴とし、データから新たなビジネスモデルを創出します。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "AIネイティブビジネスモデルの「Data as a Service」の主な収益源は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "ハードウェア販売",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "データ・インサイトの直接的価値化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "広告収入のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "物理商品の販売",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Data as a Serviceモデルは、データやそこから得られるインサイトを直接的に価値化し、API、分析サービス等として提供することで収益を得ます。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "AIプラットフォーム戦略の成功要因として重要なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "開発者体験（DX）の優秀さ",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "閉鎖的なシステム",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "ネットワーク効果の創出",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "エコシステムの活性化",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AIプラットフォームの成功には、優れた開発者体験、ネットワーク効果、活発なエコシステムが重要です。閉鎖的システムは成長を阻害します。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "MVP（最小実行可能製品）開発において最も重要な目的は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "完璧な製品の完成",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "プロダクト・マーケット・フィットの検証",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "最大限の機能実装",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "利益の最大化",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "MVPの主目的は、最小限の機能で市場のニーズとのフィット（PMF）を検証し、早期に学習を得ることです。"
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "question": "グローバルAI展開における市場評価基準として重要な要素をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "市場規模と成長性",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "規制環境とコンプライアンス要件",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "言語の単一性のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "技術インフラと人材の成熟度",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "グローバル展開には、市場魅力度、規制環境、技術的準備度など多面的な評価が必要です。言語の単一性だけでは不十分です。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "データエコシステムにおける「データブローカー」の主な役割は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "データの破壊",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "データ提供者と利用者のマッチングと価値付加",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "データの隠蔽",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "データ利用の禁止",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "データブローカーは、データ提供者と利用者をマッチングし、品質保証、匿名化、決済などの付加価値サービスを提供します。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "AIビジネスにおけるSROI（社会的投資収益率）を測定する主な目的は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "税金の削減",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "社会的価値創出の定量化と最適化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "競合他社の排除",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "規制の回避",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "SROIは、ビジネスが創出する社会的価値を金銭的価値に換算し、投資効果を測定・最適化するための指標です。"
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "question": "AIビジネスモデルの収益化手法として有効なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "使用量ベース（従量）課金",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "サブスクリプションモデル",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "無料提供のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "成果報酬型課金",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AIビジネスでは、従量課金、サブスクリプション、成果報酬など多様な収益モデルが有効です。無料提供のみでは持続可能ではありません。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "AI事業の国際展開において最も重要な成功要因は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "グローバル統一戦略のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "現地市場への適応とローカライゼーション",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "価格競争力のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "技術の優位性のみ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "国際展開の成功には、現地の文化、規制、ニーズに合わせたローカライゼーションと適応が最も重要です。"
+    }
+  ]
+}

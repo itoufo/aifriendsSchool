@@ -8,7 +8,7 @@
 }
 
 .quiz-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #0EA5E9 100%);
   color: white;
   padding: 24px;
 }
@@ -96,8 +96,8 @@
 }
 
 .option.selected {
-  background: #e8f0fe;
-  border-color: #667eea;
+  background: #E0F7FF;
+  border-color: #38BDF8;
 }
 
 .option.correct {
@@ -128,7 +128,7 @@
 }
 
 .option.selected .option-id {
-  background: #667eea;
+  background: #38BDF8;
   color: white;
 }
 
@@ -199,12 +199,12 @@
 }
 
 .btn-submit {
-  background: #667eea;
+  background: #38BDF8;
   color: white;
 }
 
 .btn-submit:hover:not(:disabled) {
-  background: #5a67d8;
+  background: #0EA5E9;
 }
 
 .btn-submit:disabled {
@@ -240,7 +240,7 @@
 .score-number {
   font-size: 5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #0EA5E9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -283,12 +283,12 @@
 }
 
 .btn-retry {
-  background: #667eea;
+  background: #38BDF8;
   color: white;
 }
 
 .btn-retry:hover {
-  background: #5a67d8;
+  background: #0EA5E9;
 }
 
 .btn-close {

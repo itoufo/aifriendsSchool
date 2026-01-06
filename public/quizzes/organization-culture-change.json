@@ -1,0 +1,286 @@
+{
+  "docId": "organization-culture-change",
+  "title": "組織文化とチェンジマネジメント 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple",
+      "question": "AI時代に求められる組織文化の特徴をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "データドリブンな意思決定",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "厳格な縦割り構造",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "継続的な学習と実験",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "失敗を学習と捉える文化",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AI時代の組織文化は、データドリブン、継続的学習、失敗からの学習を重視し、従来の縦割り構造から脱却する必要があります。"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "question": "心理的安全性の構築で最も重要なリーダーシップ行動は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "失敗を厳しく罰する",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "自らの失敗を認め、学習を促進する",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "完璧さを常に要求する",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "批判を避ける",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "リーダーが自らの失敗を認め、そこからの学習を促進することで、チーム全体の心理的安全性が高まります。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "ADKARモデルの「D」が表すものは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "Development（開発）",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Desire（変革への個人的な意欲）",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Data（データ）",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Decision（決定）",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "ADKARモデルのDはDesire（意欲）を表し、個人が変革を支持し参加したいと思う意欲を醸成する段階です。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "変革抵抗の主な原因として挙げられるものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "職を失う恐れ",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "成長への意欲",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "スキル陳腐化への不安",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "過去の失敗経験",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "変革抵抗の主な原因は、雇用不安、スキル陳腐化への恐れ、過去の失敗経験によるものが多く、これらに対処する必要があります。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "70-20-10学習モデルで最も大きな割合を占める学習方法は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "正式な研修（10%）",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "他者からの学習（20%）",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "経験を通じた学習（70%）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "すべて同じ割合",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "70-20-10モデルでは、実際の経験を通じた学習が70%を占め、最も効果的な学習方法とされています。"
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "question": "AI組織モデルの選択肢をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "中央集権型（Central AI Team）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "無組織型",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "連邦型（Hub and Spoke）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "ハイブリッド型（CoE + Embedded）",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AI組織モデルには、中央集権型、連邦型、分散型、ハイブリッド型があり、企業の成熟度に応じて選択します。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "変革コミュニケーションで最も重要な初期段階のメッセージは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "技術的な詳細",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "なぜ変革が必要なのか（Why）",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "実装スケジュール",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "予算の詳細",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "変革コミュニケーションの初期段階では、「なぜ変革が必要なのか」という理由を明確に伝えることが最も重要です。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "タレント戦略において推奨される人材獲得の比率は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "100%外部採用",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "70%内部育成、20%外部採用、10%パートナーシップ",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "100%内部育成",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "50%内部、50%外部",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "持続可能なタレント戦略では、70%を内部育成、20%を外部採用、10%をパートナーシップで補完することが推奨されます。"
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "question": "変革の定着化に必要な要素をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "組織構造の整合",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "一時的な取り組み",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "評価制度への組み込み",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "文化への統合",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "変革を定着させるには、組織構造、プロセス、評価制度、文化のすべてに変革を組み込む必要があります。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "変革リーダーシップで最も重要なコンピテンシーは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "技術的専門性のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "ビジョナリー思考と適応的リーダーシップ",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "管理統制力",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "現状維持能力",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "変革リーダーには、魅力的なビジョンを描き、不確実性の中で適応的に導く能力が最も重要です。"
+    }
+  ]
+}

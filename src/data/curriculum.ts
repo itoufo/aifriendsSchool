@@ -17,8 +17,31 @@ export interface Section {
 
 export const curriculum: Section[] = [
   {
+    id: 'level-0-start',
+    title: 'スタートガイド',
+    description: 'AI Schoolへようこそ！AIで稼ぐための第一歩を踏み出しましょう。学習の準備からAIサービスの使い方まで、ここから始めます。',
+    targetAudience: 'これからAIを学び始める全ての方、副業・独立を目指す方',
+    duration: '1-2日（準備期間）',
+    items: [
+      {
+        id: 'getting-started',
+        title: 'はじめに：稼げるAI人材への道',
+        path: '/docs/level0/00_getting-started.md',
+        duration: '30分',
+        level: 'start'
+      },
+      {
+        id: 'ai-services-guide',
+        title: 'AIサービス完全ガイド',
+        path: '/docs/level0/01_ai-services-guide.md',
+        duration: '1時間',
+        level: 'start'
+      }
+    ]
+  },
+  {
     id: 'level-1-beginner',
-    title: 'レベル1：初心者 - AI活用人材への第一歩',
+    title: 'レベル1：初心者',
     description: 'AIの基本概念を完全に理解し、日常業務や学習において、複数のAIツールを自律的に、かつ、倫理的に正しく活用できる状態になる。',
     targetAudience: 'AIに初めて触れる、または知識が断片的なビジネスパーソン、学生',
     duration: '4週間（週10時間程度の学習を想定）',
@@ -44,18 +67,25 @@ export const curriculum: Section[] = [
         duration: '3週目',
         level: 'beginner'
       },
-      { 
-        id: 'human-skills-integration', 
-        title: 'ヒューマンスキルとの融合', 
+      {
+        id: 'human-skills-integration',
+        title: 'ヒューマンスキルとの融合',
         path: '/docs/level1/04_human-skills-integration.md',
         duration: '4週目',
         level: 'beginner'
       },
+      {
+        id: 'hands-on-exercises-1',
+        title: '実践演習：手を動かして学ぶ',
+        path: '/docs/level1/05_hands-on-exercises.md',
+        duration: '5週目',
+        level: 'beginner'
+      }
     ],
   },
   {
     id: 'level-2-intermediate',
-    title: 'レベル2：中級者 - AI駆動の課題解決者へ',
+    title: 'レベル2：中級者',
     description: '担当業務におけるボトルネックを自ら発見し、複数のAIツールとiPaaSなどを連携させて課題解決やプロセス改善を自律的に実行できる。また、その成果を定量的に示し、チームに共有できる。',
     targetAudience: 'AIツールの基本操作はできるが、より体系的な活用法を学びたい企画職、マーケターなど',
     duration: '6週間（週10時間程度の学習を想定）',
@@ -81,18 +111,25 @@ export const curriculum: Section[] = [
         duration: '4-5週目',
         level: 'intermediate'
       },
-      { 
-        id: 'business-planning-communication', 
-        title: 'AI時代のビジネス企画と発信', 
+      {
+        id: 'business-planning-communication',
+        title: 'AI時代のビジネス企画と発信',
         path: '/docs/level2/04_business-planning-communication.md',
         duration: '6週目',
         level: 'intermediate'
       },
+      {
+        id: 'hands-on-exercises-2',
+        title: '実践演習：案件レベルの実践',
+        path: '/docs/level2/05_hands-on-exercises.md',
+        duration: '7週目',
+        level: 'intermediate'
+      }
     ],
   },
   {
     id: 'level-3-advanced',
-    title: 'レベル3：上級者 - AI駆動のDXリーダーへ',
+    title: 'レベル3：上級者',
     description: '部署やチームのビジネス課題に対し、AIを活用した解決策をプロジェクトとして企画・推進できる。ROIを意識した上で、適切なAI技術・ツールを選定し、チームの生産性を最大化するためのAIガバナンスと組織変革を主導できる。',
     targetAudience: '部署やチームのDXを推進するリーダー、マネージャー',
     duration: '8週間（週10時間程度の学習を想定）',
@@ -129,7 +166,7 @@ export const curriculum: Section[] = [
   },
   {
     id: 'level-4-engineer',
-    title: 'レベル4：エンジニア - AIネイティブ開発の先駆者へ',
+    title: 'エンジニア',
     description: 'AIを第一の選択肢として捉え、従来の開発手法とAIネイティブな開発手法（Vibesコーディング、AIエージェント開発など）をハイブリッドに使いこなせる。ビジネス要件を深く理解し、最適なAIモデルの選定・ファインチューニングから、スケーラブルで信頼性の高いAIアプリケーションの実装、MLOpsパイプラインの構築までをエンドツーエンドで担当できる技術的リーダーになる。',
     targetAudience: 'AI技術を自身の専門分野に活かしたいITエンジニア、開発者',
     duration: '10週間（週10-15時間程度の学習を想定）',
@@ -166,7 +203,7 @@ export const curriculum: Section[] = [
   },
   {
     id: 'level-5-executive',
-    title: 'レベル5：経営者 - AI時代の変革を導く戦略家へ',
+    title: '経営者',
     description: 'AIの本質とビジネスインパクトを深く理解し、自社の経営戦略とAI戦略を完全に統合させる。AIを単なる効率化ツールではなく、持続的な競争優位性を築き、新たな事業価値を創造するための根源として捉え、全社的な変革を主導するビジョンとリーダーシップを発揮できる。',
     targetAudience: '企業のDXやAI戦略を担う経営層、事業責任者',
     duration: '4週間（週8時間の学習・ディスカッションを想定。ケーススタディ中心）',
@@ -192,14 +229,44 @@ export const curriculum: Section[] = [
         duration: '3週目',
         level: 'executive'
       },
-      { 
-        id: 'vision-leadership', 
-        title: 'ビジョンとリーダーシップ', 
+      {
+        id: 'vision-leadership',
+        title: 'ビジョンとリーダーシップ',
         path: '/docs/level5/04_vision-leadership.md',
         duration: '4週目',
         level: 'executive'
       },
     ],
+  },
+  {
+    id: 'career-monetization',
+    title: '収益化・キャリア',
+    description: '学んだスキルを収益に変える具体的な方法。副業から独立まで、あなたの目標に合わせたロードマップを提供します。',
+    targetAudience: '副業・フリーランス・独立を目指す全ての方',
+    duration: '随時参照',
+    items: [
+      {
+        id: 'monetization-roadmap',
+        title: '収益化ロードマップ',
+        path: '/docs/career/01_monetization-roadmap.md',
+        duration: '45分',
+        level: 'career'
+      },
+      {
+        id: 'portfolio-guide',
+        title: 'ポートフォリオ構築ガイド',
+        path: '/docs/career/02_portfolio-guide.md',
+        duration: '60分',
+        level: 'career'
+      },
+      {
+        id: 'client-acquisition',
+        title: '案件獲得実践ガイド',
+        path: '/docs/career/03_client-acquisition.md',
+        duration: '90分',
+        level: 'career'
+      }
+    ]
   },
 ];
 

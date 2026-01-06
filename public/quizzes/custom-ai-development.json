@@ -1,0 +1,286 @@
+{
+  "docId": "custom-ai-development",
+  "title": "カスタムAI開発・実装 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "GPTs開発において最も重要な初期設計要素は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "UIデザインの美しさ",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "システムプロンプトとペルソナ設計",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "プログラミング言語の選択",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "データベースの種類",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "GPTsの効果的な動作には、明確なシステムプロンプトと適切なペルソナ設計が最も重要です。これにより、AIの応答の質と一貫性が決まります。"
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "question": "OpenAI APIを業務システムと統合する際の重要な考慮事項をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "APIレート制限の管理",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "エラーハンドリングとリトライ戦略",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "APIの色設定",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "セキュリティとAPIキー管理",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "API統合では、レート制限の管理、適切なエラーハンドリング、セキュアなAPIキー管理が重要です。APIに色設定という概念はありません。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "機械学習における「教師あり学習」の業務応用として最も適切な例はどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "顧客セグメンテーション（ラベルなし）",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "顧客離反予測（過去の離反データあり）",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "異常検知（正常データのみ）",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "新規パターン発見",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "顧客離反予測は、過去の離反/継続のラベル付きデータを使用して学習する典型的な教師あり学習の適用例です。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "AIシステムのセキュリティ対策として適切な手法をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "個人情報の自動検出と匿名化",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "すべてのデータを平文で保存",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "ロールベースアクセス制御（RBAC）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "暗号化によるログ保存",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AIシステムのセキュリティには、PII検出・匿名化、RBAC、暗号化ログが重要です。平文でのデータ保存はセキュリティリスクです。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "プロンプトインジェクション攻撃への最も効果的な対策は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "プロンプトの文字数制限",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "入力検証とサニタイゼーション",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "APIの使用禁止",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "システムプロンプトの削除",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "プロンプトインジェクション攻撃への主要な対策は、ユーザー入力の適切な検証とサニタイゼーション（無害化）です。"
+    },
+    {
+      "id": "q6",
+      "type": "single",
+      "question": "機械学習モデルのデプロイメントにおけるMLOpsの主要な役割は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "モデルの芸術的デザイン",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "継続的なモデルの訓練、デプロイ、監視の自動化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "マーケティング戦略の立案",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "人事管理",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "MLOpsは機械学習モデルの開発から本番環境での運用まで、継続的な訓練、デプロイメント、監視を自動化し、効率的な運用を実現します。"
+    },
+    {
+      "id": "q7",
+      "type": "multiple",
+      "question": "AI決定プロセスの透明性確保のために重要な要素をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "決定理由の記録と追跡",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "特徴量の重要度分析",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "ブラックボックス化の推進",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "監査ログの生成",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AI決定の透明性には、決定理由の記録、特徴量重要度の分析、監査ログの生成が重要です。ブラックボックス化は透明性と逆行します。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "カスタムAI開発プロジェクトのMVP（最小実行可能製品）段階で最も重視すべきことは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "完璧な精度の達成",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "コア機能の動作検証と市場フィードバック収集",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "全機能の実装",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "大規模なマーケティング",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "MVP段階では、最小限のコア機能で動作を検証し、実際のユーザーからフィードバックを収集することが最も重要です。"
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "question": "プライバシー保護を考慮したAI開発で採用すべき技術をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "差分プライバシー",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "連合学習（フェデレーテッドラーニング）",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "すべてのデータの公開",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "準同型暗号",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "プライバシー保護には、差分プライバシー、連合学習、準同型暗号などの技術が有効です。データの公開はプライバシー侵害につながります。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "AIシステムのコンプライアンスとガバナンスにおいて、AI倫理委員会の最も重要な役割は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "技術的な実装詳細の決定",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "倫理的リスクの評価と意思決定ガイドラインの策定",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "営業戦略の立案",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "プログラミング言語の選定",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "AI倫理委員会の主要な役割は、AIシステムの倫理的リスクを評価し、組織全体の意思決定ガイドラインを策定することです。"
+    }
+  ]
+}

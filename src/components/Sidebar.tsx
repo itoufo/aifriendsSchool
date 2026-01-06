@@ -62,7 +62,7 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
       />
       <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
         <div className="sidebar-header">
-          <h2>AI活用人材育成</h2>
+          <h2>AIフレンズ</h2>
           <button className="close-btn" onClick={onClose} aria-label="Close sidebar">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M18 6L6 18M6 6l12 12" />

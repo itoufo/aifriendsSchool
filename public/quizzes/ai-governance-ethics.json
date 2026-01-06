@@ -1,0 +1,286 @@
+{
+  "docId": "ai-governance-ethics",
+  "title": "AIガバナンスと企業倫理 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple",
+      "question": "AIガバナンス体制の3層構造に含まれるものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "取締役会レベルのAI委員会",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "個人の独断的判断",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "執行レベルのAIガバナンス評議会",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "運用レベルのAI倫理・コンプライアンスチーム",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "効果的なAIガバナンスは、取締役会（戦略）、執行（戦術）、運用（実施）の3層構造で構成されます。"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "question": "AI倫理原則の実装において最も重要な「透明性」の実践は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "アルゴリズムの完全秘匿",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "モデルカードの公開と説明可能AI（XAI）の導入",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "情報の非開示",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "技術的詳細の隠蔽",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "透明性の実践には、モデルカードによる情報開示とXAI技術による意思決定プロセスの説明が重要です。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "高リスクAIシステムに必要な要件として最も重要なものは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "完全自動化",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "人間による監督の義務化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "コスト最小化",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "速度優先",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "医療診断や信用判断などの高リスクAIには、人間による監督（Human-in-the-loop）が必須です。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "バイアス軽減の実装段階をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "前処理（データ拡張、リサンプリング）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "バイアスの無視",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "処理中（公平性制約、敵対的デバイアシング）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "後処理（閾値最適化、出力調整）",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "バイアス軽減は、前処理、処理中、後処理の3段階で包括的に実施する必要があります。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "AIリスクマトリクスにおいて「Critical」レベルのリスクへの対応戦略は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "受容してモニタリング",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "回避または移転",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "無視",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "後回し",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Critical（危機的）レベルのリスクは、回避するか、保険等により移転する戦略が必要です。"
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "question": "EU AI法が定める規制要件をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "リスクベースアプローチ",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "すべてのAIの禁止",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "禁止されるAI慣行の定義",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "高リスクAIへの義務",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "EU AI法は、リスクベースアプローチを採用し、禁止AI、高リスクAI、限定リスクAI、最小リスクAIに分類して規制します。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "インシデント対応計画の初期段階（0-2時間）で最優先すべきことは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "詳細な原因分析",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "影響の封じ込めと重要度評価",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "報告書の作成",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "会議の開催",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "インシデント発生直後は、被害の拡大防止（封じ込め）と重要度評価が最優先事項です。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "ステークホルダー信頼構築で最も重要な透明性の要素は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "技術的詳細の完全開示",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "AIの使用有無、能力と限界の明確な開示",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "ソースコードの公開",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "情報の選択的開示",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "ステークホルダーの信頼構築には、AIの使用有無を明示し、その能力と限界を正直に開示することが最も重要です。"
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "question": "AI監査プログラムの種類をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "技術監査（モデル性能、セキュリティ）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "随意監査",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "倫理監査（公平性、プライバシー）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "プロセス監査（ガバナンス、文書化）",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "包括的なAI監査には、技術監査、倫理監査、プロセス監査の3種類が必要です。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "将来のAIガバナンスに向けた適応型フレームワークの核心は？",
+      "options": [
+        {
+          "id": "a",
+          "text": "固定的なルールの厳格適用",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "原則ベースの柔軟なアプローチと継続的学習",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "規制の回避",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "変化への抵抗",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "将来の不確実性に対応するには、原則ベースの柔軟なアプローチと継続的な学習・適応が不可欠です。"
+    }
+  ]
+}

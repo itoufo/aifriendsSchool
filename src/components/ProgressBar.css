@@ -1,5 +1,9 @@
+/* ========================================
+   Progress Bar - Dark Theme Enhanced
+   ======================================== */
+
 .progress-bar-container {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .progress-bar-container.small {
@@ -15,32 +19,35 @@
 }
 
 .progress-label {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #334155;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #fff;
+  font-size: 1.1em;
 }
 
 .progress-bar-wrapper {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
 .progress-bar-track {
   flex: 1;
-  height: 0.75rem;
-  background-color: #e2e8f0;
-  border-radius: 9999px;
+  height: 1rem;
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
   overflow: hidden;
   position: relative;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .progress-bar-container.small .progress-bar-track {
-  height: 0.5rem;
+  height: 0.625rem;
 }
 
 .progress-bar-container.large .progress-bar-track {
-  height: 1rem;
+  height: 1.5rem;
 }
 
 .progress-bar-fill {
@@ -48,18 +55,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: width 0.5s ease-in-out;
-  border-radius: 9999px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50px;
   position: relative;
-  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  background: linear-gradient(90deg, #3b82f6, #6366f1, #8b5cf6);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
 }
 
 .progress-bar-fill.success {
-  background: linear-gradient(90deg, #10b981, #059669);
+  background: linear-gradient(90deg, #10b981, #34d399, #6ee7b7);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
 }
 
 .progress-bar-fill.warning {
-  background: linear-gradient(90deg, #f59e0b, #d97706);
+  background: linear-gradient(90deg, #f59e0b, #fbbf24, #fcd34d);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
 }
 
 .progress-bar-fill::after {
@@ -72,10 +82,10 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.4),
     transparent
   );
-  animation: shimmer 2s infinite;
+  animation: shimmer 2.5s infinite;
 }
 
 @keyframes shimmer {
@@ -89,21 +99,28 @@
 
 .progress-percentage-inside {
   color: white;
-  font-weight: 600;
-  font-size: 0.75em;
+  font-weight: 700;
+  font-size: 0.8em;
   z-index: 1;
   position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .progress-percentage-outside {
-  font-weight: 600;
-  color: #475569;
+  font-weight: 700;
+  color: #fff;
   white-space: nowrap;
+  font-size: 1.2em;
+  background: linear-gradient(135deg, #38bdf8 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .progress-stats {
-  margin-top: 0.5rem;
-  font-size: 0.875em;
-  color: #64748b;
+  margin-top: 0.75rem;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.6);
   text-align: right;
+  font-weight: 500;
 }

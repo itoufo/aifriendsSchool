@@ -1,0 +1,286 @@
+{
+  "docId": "ai-corporate-strategy",
+  "title": "AI時代の経営戦略 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple",
+      "question": "AI時代の競争優位の源泉として重要な要素をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "データ資産の質と量",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "従来型の製造設備のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "AI人材とケイパビリティ",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "ネットワーク効果とエコシステム",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AI時代の競争優位は、データ資産、AI人材、ネットワーク効果の3つが主要な源泉となります。従来型の物理的資産だけでは不十分です。"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "question": "DX成熟度モデルにおける最高レベルの特徴は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "部門単位でのデジタル化",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "業界標準の創造とプラットフォームビジネス",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "基本的なIT導入",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "プロセスの標準化のみ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "DX成熟度の最高レベル「デジタルリーダーシップ」では、業界標準を創造し、プラットフォームビジネスを展開して継続的イノベーションを実現します。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "AIセンター・オブ・エクセレンス（CoE）の主な役割は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "IT部門の代替",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "AI戦略立案、技術開発、人材育成の統合的推進",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "コスト削減のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "外部ベンダー管理のみ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "AI CoEは、戦略立案、技術開発、人材育成を統合的に推進し、全社的なAI活用を加速させる中核組織です。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "AI時代のビジネスモデルイノベーションの形態をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "サブスクリプション型AI（SaaS、AIaaS）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "製品の一括売り切りのみ",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "成果報酬型AI（レベニューシェア）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "プラットフォーム型AI（エコシステム）",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AI時代の収益モデルは、サブスクリプション、成果報酬、プラットフォーム型など、価値提供と連動した多様な形態が特徴です。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "Spotify型スクワッドモデルの特徴として最も適切なものは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "厳格な階層構造と縦割り組織",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "自律的チームと専門性の共有を両立する組織設計",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "個人作業中心の組織",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "固定的な部門構造",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "スクワッドモデルは、自律的なチーム（スクワッド）と専門性の共有（チャプター）を組み合わせたアジャイル組織設計です。"
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "question": "Kotter's 8-Step Change Modelの初期段階で重要な要素をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "危機感の醸成",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "即座の全社展開",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "変革推進チームの結成",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "ビジョンと戦略の策定",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "変革の初期段階では、危機感を醸成し、推進チームを結成し、明確なビジョンと戦略を策定することが重要です。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "AI人材ポートフォリオにおいて最も大きな割合を占めるべきカテゴリーは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "AIリーダー（戦略立案者）",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "AIエンジニア（開発者）",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "AIユーザー（活用者）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "AI研究者",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "全従業員の約60%を占めるAIユーザー層が、日常業務でAIツールを活用することで組織全体の生産性が向上します。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "AI投資判断におけるステージゲートプロセスの目的は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "投資の遅延",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "段階的な評価とリスク管理による意思決定の最適化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "責任の回避",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "コストの増大",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "ステージゲートプロセスは、各段階で評価を行い、リスクを管理しながら投資判断を最適化する手法です。"
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "question": "AIガバナンス体制に必要な委員会・組織をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "取締役会レベルのAI委員会",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "個人の判断のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "AI倫理委員会",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "AI Center of Excellence",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "効果的なAIガバナンスには、取締役会レベルの監督、倫理委員会、実行組織としてのCoEの3層構造が必要です。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "経営者がAI変革で最初に取り組むべき90日間の優先事項は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "全システムの即座の入れ替え",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "現状評価、戦略策定、組織構築、早期成果創出",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "外部への完全委託",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "現状維持",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "最初の90日間で、現状評価と戦略策定（30日）、組織構築（30日）、早期成果創出（30日）を段階的に実行することが成功の鍵です。"
+    }
+  ]
+}

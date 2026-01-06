@@ -22,9 +22,9 @@
   justify-content: space-between;
   gap: 24px;
   padding: 24px;
-  background: linear-gradient(135deg, #f0f4ff 0%, #faf5ff 100%);
+  background: linear-gradient(135deg, #E0F7FF 0%, #F0FDFA 100%);
   border-radius: 12px;
-  border: 1px solid #e0e7ff;
+  border: 1px solid #BAE6FD;
 }
 
 .quiz-section-info h3 {
@@ -41,7 +41,7 @@
 .quiz-count {
   margin-left: 8px;
   padding: 2px 8px;
-  background: #667eea;
+  background: #38BDF8;
   color: white;
   border-radius: 12px;
   font-size: 0.875rem;
@@ -56,7 +56,7 @@
 
 .quiz-start-button {
   padding: 12px 32px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #0EA5E9 100%);
   color: white;
   border: none;
   border-radius: 8px;
@@ -69,7 +69,7 @@
 
 .quiz-start-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
 }
 
 .quiz-start-button:active {
@@ -88,7 +88,7 @@
 
 .notes-toggle-button {
   padding: 1rem 1.5rem;
-  background: #2563eb;
+  background: #38BDF8;
   color: white;
   border: none;
   border-radius: 50px;
@@ -99,13 +99,13 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
 }
 
 .notes-toggle-button:hover {
-  background: #1d4ed8;
+  background: #0EA5E9;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
 }
 
 .completion-badge {

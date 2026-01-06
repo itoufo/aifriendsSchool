@@ -1,0 +1,286 @@
+{
+  "docId": "investment-roi-measurement",
+  "title": "AI投資とROI測定 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "McKinseyの3ホライズンモデルにおいて、既存事業の効率化に適したホライズンはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "ホライズン1（0-12ヶ月、ROI 1-2倍）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "ホライズン2（12-36ヶ月、ROI 3-5倍）",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "ホライズン3（36ヶ月以上、ROI 10倍以上）",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "すべてのホライズンで同じ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "ホライズン1は既存事業の効率化に焦点を当て、低リスクで1-2倍のROIを0-12ヶ月で実現することを目指します。"
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "question": "AI投資の総価値を構成する要素をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "直接的価値（収益増加、コスト削減）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "固定的価値のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "オプション価値（将来の機会）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "ネットワーク効果による価値",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AI投資の総価値は、直接的価値、間接的価値、オプション価値、ネットワーク効果の4つの要素から構成されます。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "S字カーブモデルで表される価値実現の特徴は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "最初から一定速度で価値が実現",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "初期は緩やか、中期に加速、後期に安定化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "直線的な価値増加",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ランダムな価値変動",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "S字カーブは、AI投資の価値実現が初期は緩やかで、中期（変曲点）で急速に加速し、成熟期に安定化することを示します。"
+    },
+    {
+      "id": "q4",
+      "type": "single",
+      "question": "リスク調整後リターンを測定するシャープレシオの計算で使用される要素は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "収益のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "超過リターンをリスク（標準偏差）で除したもの",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "投資額のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "時間のみ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "シャープレシオは、リスクフリーレートを超える超過リターンをリスク（標準偏差）で除して、リスク単位当たりのリターンを測定します。"
+    },
+    {
+      "id": "q5",
+      "type": "multiple",
+      "question": "AIポートフォリオ管理のバランスド・スコアカードの視点をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "財務の視点（ROI、収益成長）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "個人の好みの視点",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "顧客の視点（満足度、市場シェア）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "学習と成長の視点（AI能力、イノベーション）",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "バランスド・スコアカードは、財務、顧客、内部プロセス、学習と成長の4つの視点からAI投資を評価します。"
+    },
+    {
+      "id": "q6",
+      "type": "single",
+      "question": "モンテカルロシミュレーションをAI投資評価で使用する主な目的は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "確定的な結果の予測",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "不確実性を考慮したリスク分析と確率的評価",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "コストの削減",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "時間の短縮",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "モンテカルロシミュレーションは、複数のシナリオを確率的にシミュレートし、不確実性下での投資リスクと期待値を評価します。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "AI総所有コスト（TCO）に含まれる「隠れたコスト」として最も重要なものは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "ハードウェア購入費のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "技術的負債と機会費用",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "電気代のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "オフィス賃料",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "隠れたコストには、技術的負債（将来の改修コスト）と機会費用（他の投資機会の逸失）が含まれ、TCO評価で重要です。"
+    },
+    {
+      "id": "q8",
+      "type": "multiple",
+      "question": "ベネフィット依存ネットワークの構成要素をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "イネーブラー（技術基盤、データ品質）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "ランダムな要素",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "ビジネス変更（プロセス再設計）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "戦略目標（市場リーダーシップ）",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "ベネフィット依存ネットワークは、イネーブラー、ビジネス変更、実現利益、戦略目標の連鎖で価値創出を体系化します。"
+    },
+    {
+      "id": "q9",
+      "type": "single",
+      "question": "動的投資配分における「キルスイッチ基準」の適用タイミングは？",
+      "options": [
+        {
+          "id": "a",
+          "text": "プロジェクト開始時",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "パフォーマンスが期待値の50%未満が6ヶ月継続時",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "成功時",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ランダムに決定",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "キルスイッチ基準は、パフォーマンスが期待値の50%未満が6ヶ月継続した場合に、投資中止を検討する明確な基準です。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "AI投資のシナジー効果で最も重要な要素は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "個別プロジェクトの独立性維持",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "データ、技術、能力の共有による相乗効果",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "コストの増加",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "プロジェクトの分離",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "複数のAIプロジェクト間でデータ、技術プラットフォーム、能力を共有することで、1+1が2以上の価値を生むシナジー効果が得られます。"
+    }
+  ]
+}

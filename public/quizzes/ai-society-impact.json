@@ -1,0 +1,286 @@
+{
+  "docId": "ai-society-impact",
+  "title": "AI社会実装・インパクト創出 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple",
+      "question": "AI for Social Goodプロジェクトの設計において重要な要素をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "ステークホルダーの特定と関与",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "利益最大化のみを重視",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "インパクト測定指標の定義",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "持続可能性モデルの設計",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "社会課題解決プロジェクトでは、ステークホルダー関与、インパクト測定、持続可能性が重要です。利益最大化のみでは社会価値を創出できません。"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "question": "医療AIシステムの実装において最も重要な考慮事項は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "開発速度の最大化",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "臨床的妥当性と安全性の検証",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "コストの最小化のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "技術の複雑性",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "医療AIでは患者の安全が最優先であり、臨床的妥当性と安全性の厳格な検証が不可欠です。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "グリーンAIの実践において最も効果的なアプローチは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "計算資源を無制限に使用",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "モデル圧縮と効率的な学習アルゴリズムの採用",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "精度を完全に犠牲にする",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "AI使用の完全停止",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "グリーンAIでは、モデル圧縮や効率的なアルゴリズムにより、性能を維持しながら環境負荷を削減することが重要です。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "包摂的AI開発で考慮すべき要素をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "アクセシビリティ（障害者対応）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "言語的多様性への対応",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "高所得層のみへのサービス提供",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "低帯域・低スペック環境への対応",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "包摂的AIは、障害者、多言語話者、低所得層など、すべての人々がアクセスできることを目指します。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "AI倫理原則における「透明性」の実装として最も適切なものは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "アルゴリズムの完全秘匿",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "説明可能AI（XAI）技術の導入とモデルカードの公開",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "ユーザーへの情報非開示",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "監査の拒否",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "透明性の実装には、XAI技術による決定プロセスの説明可能性確保と、モデルカードによる情報開示が重要です。"
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "question": "AI倫理委員会の主要な責任として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "倫理的リスクの評価と審査",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "技術的実装の詳細決定",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "ガイドライン策定と監督",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "インシデント対応と改善提言",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AI倫理委員会は、倫理的観点からのリスク評価、ガイドライン策定、監督、インシデント対応を担います。技術実装の詳細は開発チームの責任です。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "Theory of Change（変化の理論）において、「アウトカム」と「インパクト」の違いは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "同じ意味で違いはない",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "アウトカムは中短期的な変化、インパクトは長期的な社会変化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "アウトカムは失敗、インパクトは成功",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "アウトカムは定量的、インパクトは定性的",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "アウトカムは介入による中短期的な直接的変化を、インパクトはその結果生じる長期的な社会全体への影響を指します。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "SROI（社会的投資収益率）計算における「デッドウェイト」とは何を指しますか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "プロジェクトの総重量",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "介入がなくても起きていたであろう変化の割合",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "失敗したプロジェクトの数",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "投資額の合計",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "デッドウェイトは、プロジェクトの介入がなくても自然に起きていたであろう変化を除外するための調整要素です。"
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "question": "社会的インパクトのスケーリング戦略として有効なアプローチをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "成功モデルの他地域への複製展開",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "完全に閉鎖的な独占実施",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "オープンソース化による知識共有",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "政策への組み込みとアドボカシー",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "インパクトのスケーリングには、複製展開、オープンソース化、政策影響が有効です。閉鎖的アプローチではスケールが制限されます。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "パーソナライズド学習AIシステムの最も重要な設計原則は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "すべての学習者に同一のコンテンツ提供",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "個々の学習スタイル、ペース、レベルに適応する動的調整",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "最速での学習完了のみを重視",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "教師の完全な排除",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "パーソナライズド学習の核心は、各学習者の個別ニーズ（学習スタイル、ペース、現在のレベル）に動的に適応することです。"
+    }
+  ]
+}

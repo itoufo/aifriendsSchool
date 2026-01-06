@@ -1,0 +1,286 @@
+{
+  "docId": "ai-team-leadership",
+  "title": "AIチーム構築・リーダーシップ 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "AI時代の組織設計における最も重要な特徴は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "厳格な階層型構造の維持",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "フラット・ネットワーク型構造と継続的学習文化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "完全な個人作業の重視",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "技術のみへの集中",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "AI時代の組織は、迅速な意思決定と適応のためのフラット構造と、技術進歩に対応する継続的学習文化が必要です。"
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "question": "効果的なAIチーム構成に必要な役割をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "AIエンジニア/データサイエンティスト",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "AIプロダクトマネージャー",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "全員が同じスキルセット",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "AI倫理オフィサー",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "効果的なAIチームには、技術専門家、プロダクト管理、倫理監督など多様な役割が必要です。全員が同じスキルでは効果的ではありません。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "AIプロジェクトにおける「実験駆動型開発」の主な利点は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "開発期間の延長",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "不確実性への対処と早期学習",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "責任の回避",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "計画の排除",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "実験駆動型開発により、AI特有の不確実性に対処しながら、早期に仮説を検証し、学習を蓄積できます。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "変革リーダーシップにおける抵抗管理の有効な手法をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "段階的な変化導入",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "教育とスキル開発プログラム",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "反対者の即座の排除",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "成功事例の共有と可視化",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "効果的な抵抗管理には、段階的導入、教育支援、成功事例の共有が重要です。反対者の排除は逆効果です。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "AIプロジェクトの「スプリント」管理で最も重要な要素は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "長期間の計画厳守",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "短期サイクルでの価値提供と継続的改善",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "変更の完全禁止",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "個人作業の最大化",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "スプリント管理では、短期サイクル（通常2週間）で価値を提供し、フィードバックに基づいて継続的に改善することが重要です。"
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "question": "AI人材採用において評価すべき重要な要素をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "技術的スキルと実装能力",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "学習意欲と適応力",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "過去の経験のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "協調性とコミュニケーション能力",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AI人材には技術力に加え、急速な技術変化への適応力、チーム協働のためのソフトスキルが不可欠です。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "AIチームの育成プログラムで最も効果的なアプローチは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "座学のみの理論教育",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "理論と実践プロジェクトの組み合わせ",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "個人学習のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "外部委託のみ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "効果的な育成には、理論的基礎と実践的プロジェクトを組み合わせ、実際の問題解決能力を養うことが重要です。"
+    },
+    {
+      "id": "q8",
+      "type": "multiple",
+      "question": "チェンジマネジメントの成功要因として重要なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "明確なビジョンとコミュニケーション",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "ステークホルダーの早期巻き込み",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "秘密主義での実施",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "クイックウィンの創出",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "チェンジマネジメントの成功には、明確なビジョン、早期の関係者巻き込み、早期成果（クイックウィン）が重要です。"
+    },
+    {
+      "id": "q9",
+      "type": "single",
+      "question": "AIスキル評価において最も包括的なアプローチは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "技術力のみの評価",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "技術力、ビジネス影響、協調性、継続学習の多面的評価",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "年功序列による評価",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "学歴のみでの判断",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "包括的なAIスキル評価には、技術力だけでなく、ビジネスへの貢献、チーム協働、継続的学習など多面的な視点が必要です。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "AI変革プロジェクトにおけるリスク管理で最も重要な観点は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "技術リスクのみへの対処",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "技術、ビジネス、規制、倫理の総合的リスク管理",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "リスクの完全回避",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "リスク無視",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "AI変革では技術面だけでなく、ビジネス影響、規制遵守、倫理的配慮を含む総合的なリスク管理が不可欠です。"
+    }
+  ]
+}

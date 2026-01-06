@@ -1,0 +1,286 @@
+{
+  "docId": "advanced-ml-engineering",
+  "title": "先端ML・エンジニアリング 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "Transformerアーキテクチャの最も重要な革新は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "RNNの改良版",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Self-Attentionメカニズムによる並列処理",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "CNNとの統合",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "メモリ使用量の削減",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "TransformerのSelf-Attentionは、系列全体を並列処理できる革新的メカニズムで、RNNの逐次処理の制約を解決しました。"
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "question": "大規模言語モデル（LLM）のファインチューニング手法をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "LoRA（Low-Rank Adaptation）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "完全な再学習",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "QLoRA（Quantized LoRA）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Prompt Tuning",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "LoRA、QLoRA、Prompt Tuningは効率的なファインチューニング手法です。完全な再学習は計算コストが高すぎます。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "強化学習におけるQ学習の目的は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "状態の予測",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "行動価値関数の学習",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "環境のモデル化",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "報酬の最小化",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Q学習は、各状態-行動ペアの価値（Q値）を学習し、最適な行動選択を可能にします。"
+    },
+    {
+      "id": "q4",
+      "type": "single",
+      "question": "Attention機構における「Query」「Key」「Value」の役割として正しいものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "すべて同じ役割",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "QueryとKeyで関連度を計算し、Valueから情報を取得",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Queryのみが重要",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "KeyとValueは無関係",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "QueryとKeyの内積で注意の重みを計算し、その重みでValueを加重平均して出力を生成します。"
+    },
+    {
+      "id": "q5",
+      "type": "multiple",
+      "question": "Vision Transformer（ViT）の特徴をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "画像をパッチに分割して処理",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "CNNの完全な代替",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "位置エンベディングの使用",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "大規模データで高性能",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "ViTは画像をパッチ分割し、位置エンベディングを加えてTransformerで処理します。大規模データで特に高性能です。"
+    },
+    {
+      "id": "q6",
+      "type": "single",
+      "question": "PPO（Proximal Policy Optimization）が解決する主な問題は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "計算速度の向上",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "ポリシー更新の安定性",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "メモリ使用量の削減",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "教師あり学習への変換",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "PPOは、ポリシー更新を制限することで学習の安定性を保ちながら、効率的な最適化を実現します。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "モデル量子化の主な目的は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "精度の向上",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "モデルサイズと推論速度の最適化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "学習速度の向上",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "データ増強",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "量子化は、重みや活性化の精度を下げることで、モデルサイズを削減し推論を高速化します。"
+    },
+    {
+      "id": "q8",
+      "type": "multiple",
+      "question": "分散学習における勾配集約手法をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "AllReduce",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "単一ノード処理",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Ring-AllReduce",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Parameter Server",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "AllReduce、Ring-AllReduce、Parameter Serverは、分散学習で勾配を効率的に集約する主要な手法です。"
+    },
+    {
+      "id": "q9",
+      "type": "single",
+      "question": "Mixture of Experts（MoE）アーキテクチャの利点は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "すべてのパラメータを常に使用",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "条件付き計算による効率的なスケーリング",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "モデルサイズの縮小",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "学習の単純化",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "MoEは、入力に応じて一部のエキスパートのみを活性化することで、計算効率を保ちながら大規模化を実現します。"
+    },
+    {
+      "id": "q10",
+      "type": "multiple",
+      "question": "RLHF（Reinforcement Learning from Human Feedback）の実装ステップをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "教師ありファインチューニング",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "ランダムな報酬設定",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "報酬モデルの学習",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "PPOによるポリシー最適化",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "RLHFは、教師ありファインチューニング、人間のフィードバックから報酬モデル学習、PPOでの最適化の3段階で実装されます。"
+    }
+  ]
+}

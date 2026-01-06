@@ -41,8 +41,8 @@ export const AppConfig = {
   branding: {
     title: 'AI Friends School - 包括的AIスクールカリキュラム',       // トップバーのタイトル
     logo: {
-      src: '/docs/images/common/ai-friends-logo.png',  // ロゴ画像のパス
-      alt: 'AI Friends School',                        // ロゴのalt属性
+      src: '/images/logo.png',  // ロゴ画像のパス
+      alt: 'AIフレンズ',         // ロゴのalt属性
     },
     footer: {
       text: '© 2024 AI Friends School - 真に稼げる人材、そして未来を創造できる人材を育成',

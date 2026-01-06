@@ -1,0 +1,286 @@
+{
+  "docId": "production-ai-systems",
+  "title": "本番AIシステム運用 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple",
+      "question": "本番環境でのモデルモニタリングで追跡すべき指標をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "予測精度とビジネスメトリクス",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "開発者の作業時間のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "データドリフトとコンセプトドリフト",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "レイテンシーとスループット",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "本番環境では、精度、ドリフト、パフォーマンスメトリクスを包括的に監視する必要があります。"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "question": "データドリフトとコンセプトドリフトの違いは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "同じ現象の異なる呼び方",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "データドリフトは入力分布の変化、コンセプトドリフトは入出力関係の変化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "データドリフトは出力の変化、コンセプトドリフトは入力の変化",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "両方ともモデルのバグ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "データドリフトは入力データの分布変化、コンセプトドリフトは同じ入力に対する正解ラベルの変化を指します。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "カナリアデプロイメントの主な目的は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "全ユーザーへの即座の展開",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "段階的なリリースによるリスク低減",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "開発速度の向上",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "コスト削減のみ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "カナリアデプロイメントは、一部のトラフィックで新バージョンをテストし、問題を早期発見してリスクを低減します。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "モデルの再学習トリガーとして適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "定期的なスケジュール",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "ランダムなタイミング",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "パフォーマンス閾値の違反",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "ドリフト検出時",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "再学習は、定期スケジュール、性能劣化、ドリフト検出など、複数のトリガーで実行すべきです。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "シャドウモードデプロイメントの特徴は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "新モデルが本番トラフィックに直接影響",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "新モデルが並行実行されるが結果は使用されない",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "古いモデルの即座の削除",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "テスト環境のみでの実行",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "シャドウモードでは、新モデルを本番環境で実行しますが、実際の予測には使用せず、性能を安全に評価できます。"
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "question": "本番AIシステムのSLO（Service Level Objectives）として設定すべき項目をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "可用性（アップタイム）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "開発者の満足度",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "レスポンスタイム（P95、P99）",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "エラー率",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "SLOには、可用性、レスポンスタイム、エラー率など、測定可能なサービス品質指標を設定します。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "フィードバックループの実装で最も重要な考慮事項は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "すべてのフィードバックを無条件で信頼",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "フィードバックの品質検証とバイアス除去",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "フィードバックの完全な無視",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "即座の自動再学習",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "フィードバックループでは、データ品質の検証とバイアス除去が重要で、悪意のあるデータから保護する必要があります。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "モデルのロールバック戦略として最も安全なアプローチは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "問題発生時に手動で対応",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "自動ロールバックメカニズムと以前の安定版の保持",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "古いバージョンの即座の削除",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ロールバック機能の非実装",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "自動ロールバックメカニズムと複数の安定版保持により、問題発生時に迅速に安全な状態に戻せます。"
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "question": "エクスプレイナビリティツールの実装目的をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "規制コンプライアンス対応",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "モデルの完全な隠蔽",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "デバッグと問題診断",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "ユーザーの信頼構築",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "エクスプレイナビリティは、規制対応、デバッグ支援、信頼構築など、複数の重要な目的を果たします。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "本番環境でのモデル推論キャッシュの主な利点は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "モデル精度の向上",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "レイテンシー削減とコスト最適化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "データ収集の増加",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "モデルの自動更新",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "推論キャッシュは、頻繁に要求される予測結果を保存し、レイテンシーを削減して計算コストを最適化します。"
+    }
+  ]
+}

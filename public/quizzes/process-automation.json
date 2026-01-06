@@ -1,0 +1,286 @@
+{
+  "docId": "process-automation",
+  "title": "業務プロセスの自動化 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "iPaaS（Integration Platform as a Service）の主要な目的として最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "プログラミング言語の統一",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "異なるアプリケーションやデータソースの統合",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "データストレージの最適化",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ユーザーインターフェースの改善",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "iPaaSは、クラウド上で異なるアプリケーションやデータソースを統合し、ワークフローを自動化するためのプラットフォームです。"
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "question": "RPA（Robotic Process Automation）が適用できる業務の特徴として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "明確なルールが存在する",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "高度な創造性が必要",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "反復的に実行される",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "大量の処理が必要",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "RPAは、ルールベース、反復性、大量処理の特徴を持つ業務に適しています。高度な創造性を要する業務は人間が担うべき領域です。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "AI強化型RPAの主な利点として最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "完全無人での運用",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "非構造化データの処理能力向上",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "初期導入コストの削減",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "プログラミング知識の不要化",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "AI強化により、従来のRPAでは難しかった非構造化データ（画像、音声、自然言語等）の処理が可能になり、適用範囲が大幅に拡大します。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "自動化プロジェクトの成功のために重要な要素として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "小さく始めて段階的に拡張する",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "最初から完璧なシステムを構築する",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "適切なエラーハンドリングの設計",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "継続的な監視とメンテナンス",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "自動化プロジェクトの成功には、MVP（最小実行可能製品）アプローチ、堅牢なエラーハンドリング、継続的なメンテナンスが重要です。最初から完璧を目指すとリスクが高まります。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "プロセスマイニングの主な目的は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "新しいビジネスプロセスの設計",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "システムログから実際のプロセス流れを可視化・分析",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "従業員の作業効率測定",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "データベースの最適化",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "プロセスマイニングは、システムに記録されたイベントログを分析して、実際に実行されているビジネスプロセスの流れを発見・可視化し、改善点を特定する手法です。"
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "question": "Zapierを使ったAI連携自動化で設定すべき基本要素として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "トリガー（起動条件）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "AIによる処理・分析アクション",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "データベース管理者権限",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "結果の出力・通知アクション",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Zapierの自動化フローには、トリガー、処理アクション（AI分析含む）、出力アクションが基本要素として必要です。データベース管理者権限は必須ではありません。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "Power Automate Desktopと他のRPAツールを比較した際の主な特徴は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "最も高い処理性能",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Microsoft環境との強力な統合",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "最も安価な価格設定",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "プログラミング必須の設計",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Power Automate DesktopはMicrosoft製品群（Office 365、Teams、SharePoint等）との統合に優れており、Microsoft環境を使用する組織にとって大きなメリットがあります。"
+    },
+    {
+      "id": "q8",
+      "type": "multiple",
+      "question": "継続的改善フレームワーク（PDCA × AI）の各フェーズでのAI活用として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plan: 過去データ分析による改善提案生成",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Do: 人間の作業完全代替",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Check: 効果測定・分析の自動化",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Act: 機械学習による自動調整",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "PDCAサイクルでAIは計画立案支援、効果測定、自動調整で活用できますが、人間の作業を完全代替するのではなく、補完・拡張する役割です。"
+    },
+    {
+      "id": "q9",
+      "type": "single",
+      "question": "業務自動化における「例外処理」の設計で最も重要な考慮点は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "すべての例外を自動処理する",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "例外を無視して処理を継続する",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "適切な人間へのエスカレーション設計",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "例外発生時にシステムを停止する",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "自動化システムでは、処理できない例外が発生した際に、適切な担当者に適切なタイミングでエスカレーションする仕組みの設計が重要です。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "自動化によるROI（投資対効果）を正確に測定するために最も重要な要素は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "初期導入コストのみを考慮",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "時間削減効果のみを測定",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "導入前後の定量的・定性的効果の包括的測定",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "競合他社との比較",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "正確なROI測定には、コスト（導入・運用・保守）と効果（時間削減、精度向上、従業員満足度等）を包括的に測定し、導入前後で比較することが重要です。"
+    }
+  ]
+}

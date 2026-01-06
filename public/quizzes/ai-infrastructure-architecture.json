@@ -1,0 +1,286 @@
+{
+  "docId": "ai-infrastructure-architecture",
+  "title": "AIインフラストラクチャ・アーキテクチャ 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple",
+      "question": "エンタープライズAIアーキテクチャの主要コンポーネントをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "データレイク/データウェアハウス",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "単一のモノリシックシステム",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "MLプラットフォーム",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "APIゲートウェイ",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "エンタープライズAIアーキテクチャには、データ基盤、MLプラットフォーム、APIゲートウェイなどの分散コンポーネントが必要です。"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "question": "MLOpsパイプラインにおけるCI/CDの主な目的は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "手動デプロイメントの促進",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "モデルの自動テスト、検証、デプロイメント",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "コード品質の無視",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "開発速度の低下",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "MLOpsのCI/CDは、モデルの品質を保証しながら自動的にテスト、検証、デプロイメントを行うことが目的です。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "分散学習においてデータ並列化が最も適している状況はどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "モデルが単一GPUメモリに収まらない場合",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "大量のデータで同一モデルを学習する場合",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "少量のデータしかない場合",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "推論のみを行う場合",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "データ並列化は、大量のデータを複数のGPU/ノードで分割処理し、同一モデルを効率的に学習する際に最適です。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "Kubernetesを使用したAIワークロード管理の利点をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "自動スケーリング",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "リソース管理の手動化",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "GPU リソースのスケジューリング",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "ローリングアップデート",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Kubernetesは自動スケーリング、GPUスケジューリング、ローリングアップデートなど、AIワークロードの自動管理機能を提供します。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "Feature Storeの主な役割は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "生データの保存のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "特徴量の一元管理と再利用の促進",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "モデルの学習",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "ログの収集",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Feature Storeは、特徴量を一元管理し、学習と推論で一貫した特徴量の再利用を可能にします。"
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "question": "モデルレジストリが提供する機能をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "モデルバージョン管理",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "データの前処理",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "モデルメタデータの追跡",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "ステージ管理（開発/ステージング/本番）",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "モデルレジストリは、バージョン管理、メタデータ追跡、ステージ管理を通じてモデルのライフサイクルを管理します。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "エッジAIデプロイメントの最大の課題は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "無限の計算リソース",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "リソース制約下での性能最適化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "ネットワーク帯域の過剰",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "セキュリティの不要性",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "エッジデバイスは限られたCPU/メモリ/電力で動作するため、リソース制約下での性能最適化が最大の課題です。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "A/Bテストによるモデル評価で最も重要な考慮事項は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "すべてのユーザーに新モデルを即座に適用",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "統計的有意性の確保と適切なサンプルサイズ",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "テスト期間を1日に限定",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "メトリクスの無視",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "A/Bテストでは、統計的に有意な結果を得るために適切なサンプルサイズとテスト期間が必要です。"
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "question": "マルチクラウドAI戦略の利点をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "ベンダーロックインの回避",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "管理の複雑性の排除",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "各クラウドの最適サービス活用",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "災害復旧とビジネス継続性",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "マルチクラウド戦略は、ベンダーロックイン回避、最適サービス活用、DR対策を可能にしますが、管理の複雑性は増加します。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "モデルサービングにおけるバッチ推論が最も適している用途はどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "リアルタイムチャットボット",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "大量データの定期的な予測処理",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "オンライン不正検知",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "インタラクティブな画像生成",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "バッチ推論は、リアルタイム性が不要で大量データを効率的に処理する必要がある場合に最適です。"
+    }
+  ]
+}

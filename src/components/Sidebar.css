@@ -69,6 +69,12 @@
   color: #fff;
 }
 
+.sidebar-logo {
+  max-width: 160px;
+  height: auto;
+  object-fit: contain;
+}
+
 .close-btn {
   display: flex;
   align-items: center;
@@ -121,8 +127,8 @@
 }
 
 .home-link.active {
-  background: rgba(99, 102, 241, 0.1);
-  color: #818cf8;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38BDF8;
 }
 
 .bookmarks-toggle {
@@ -261,7 +267,7 @@
 }
 
 .nav-link.active {
-  background: rgba(99, 102, 241, 0.1);
-  color: #818cf8;
-  border-left-color: #818cf8;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38BDF8;
+  border-left-color: #38BDF8;
 }

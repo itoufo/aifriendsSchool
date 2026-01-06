@@ -21,7 +21,7 @@
   width: 40px;
   height: 40px;
   border: 3px solid #e0e0e0;
-  border-top-color: #6366f1;
+  border-top-color: #38BDF8;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 0 auto 1rem;
@@ -44,7 +44,7 @@
 }
 
 .doc-title-bar {
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #0EA5E9 100%);
   color: white;
   padding: 1rem 1.5rem;
   border-radius: 8px;
@@ -139,7 +139,7 @@
   border-radius: 4px;
   font-size: 0.875em;
   font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
-  color: #6366f1;
+  color: #0EA5E9;
 }
 
 .markdown-content pre {
@@ -161,11 +161,11 @@
 }
 
 .markdown-content blockquote {
-  border-left: 4px solid #6366f1;
+  border-left: 4px solid #38BDF8;
   margin: 1.5rem 0;
   padding: 0.5rem 1rem;
-  background: #f5f3ff;
-  color: #4c1d95;
+  background: #E0F7FF;
+  color: #0369A1;
 }
 
 .markdown-content blockquote p {
@@ -173,7 +173,7 @@
 }
 
 .markdown-content a {
-  color: #6366f1;
+  color: #0EA5E9;
   text-decoration: none;
 }
 

@@ -1,0 +1,286 @@
+{
+  "docId": "advanced-prompt-engineering",
+  "title": "高度なプロンプト・エンジニアリング 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single",
+      "question": "Chain of Thought（CoT）プロンプトの主な利点として最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "処理速度の向上",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "論理的思考プロセスの可視化と精度向上",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "文字数の削減",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "APIコストの削減",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Chain of Thoughtは、AIに段階的な思考プロセスを明示させることで、論理的な推論を促し、回答の精度と透明性を向上させる手法です。"
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "question": "Few-shot学習で高品質な例を選択する際の重要な要素として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "タスクの核心部分を適切に表現している",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "多様なパターンをカバーしている",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "例の数が多ければ多いほど良い",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "明確で一貫した形式になっている",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Few-shot学習では、質の高い代表的な例、多様性、一貫した形式が重要です。例の数よりも質が重要であり、多すぎるとコンテキストウィンドウを圧迫する可能性があります。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "Self-Consistency手法の基本的な考え方は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "同じプロンプトを複数回実行して最も頻度の高い回答を選ぶ",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "プロンプトの文法を統一する",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "AIの回答を人間がチェックする",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "複数のAIモデルを同時に使う",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Self-Consistencyは、同じ問題を複数回異なる思考パスで解いてもらい、最も多く選ばれた回答を最終答案とする手法で、推論の信頼性を向上させます。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "Role Prompting（役割指定）で効果的な役割設定の要素として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "具体的な専門領域の指定",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "期待する思考スタイルの明示",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "抽象的で曖昧な表現を使用",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "コンテキストに応じた制約条件の設定",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "効果的な役割設定では、具体的な専門性、思考スタイル、制約条件を明確に指定することが重要です。抽象的で曖昧な表現は期待する出力を得にくくします。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "Tree of Thoughts（ToT）手法が最も適用効果の高いタスクタイプはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "単純な情報検索",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "複雑な戦略的推論や創造的問題解決",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "文法チェック",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "定型文の生成",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Tree of Thoughtsは、複数の思考パスを探索し、最適解を見つける手法で、戦略的推論や創造的問題解決など複雑なタスクに最も効果を発揮します。"
+    },
+    {
+      "id": "q6",
+      "type": "single",
+      "question": "LangChainにおけるAgentの主要な構成要素ではないものはどれですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tools（ツール）",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Memory（メモリ）",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Prompt Templates（プロンプトテンプレート）",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Database Schema（データベーススキーマ）",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "LangChainのAgentは、Tools、Memory、Prompt Templatesが主要構成要素です。Database Schemaは直接的なAgent構成要素ではありません。"
+    },
+    {
+      "id": "q7",
+      "type": "multiple",
+      "question": "Multi-Agent Systemの利点として適切なものをすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "専門化による品質向上",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "並列処理による効率化",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "実装コストの削減",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "障害時の冗長性確保",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Multi-Agent Systemでは、各エージェントの専門化による品質向上、並列処理による効率化、障害時の冗長性が利点です。実装コストは一般的に増加します。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "Retrieval-Augmented Generation（RAG）の主要な目的は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "モデルのサイズを小さくする",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "外部知識を動的に取得して回答の正確性を向上させる",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "学習時間を短縮する",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "プロンプトの文字数を削減する",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "RAGは、LLMの知識カットオフの制限を補うため、外部データソースから関連情報を検索し、それを基に回答を生成することで正確性を向上させる手法です。"
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "question": "プロンプトインジェクション攻撃への対策として有効な手法をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "入力検証とサニタイゼーション",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "システムプロンプトの暗号化",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "出力フィルタリング",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "権限分離とアクセス制御",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "プロンプトインジェクション対策には、入力の検証とサニタイゼーション、出力のフィルタリング、適切な権限管理が有効です。システムプロンプトの暗号化は直接的な対策ではありません。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "AutoGPTやLangChainなどのAIエージェントフレームワークの最大の特徴は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "人間の監視なしで完全自動実行",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "目標設定から実行まで自律的な計画立案と実行",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "プログラミング知識不要の操作",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "無制限のAPI呼び出し",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "AIエージェントフレームワークの特徴は、与えられた目標に対して自律的に計画を立て、ツールを使い分けながら実行する点です。完全自動化ではなく、適切な監視と制御が必要です。"
+    }
+  ]
+}

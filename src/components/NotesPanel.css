@@ -51,7 +51,7 @@
 }
 
 .tab-button.active {
-  background: #2563eb;
+  background: #0EA5E9;
   color: white;
 }
 
@@ -100,8 +100,8 @@
 
 .note-input:focus {
   outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: #38BDF8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
 }
 
 .tags-input {
@@ -116,8 +116,8 @@
 
 .tags-input:focus {
   outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: #38BDF8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
 }
 
 .note-actions {
@@ -139,12 +139,12 @@
 }
 
 .save-button {
-  background: #2563eb;
+  background: #38BDF8;
   color: white;
 }
 
 .save-button:hover:not(:disabled) {
-  background: #1d4ed8;
+  background: #0EA5E9;
 }
 
 .save-button:disabled {
@@ -249,8 +249,8 @@
 .tag {
   display: inline-block;
   padding: 0.125rem 0.5rem;
-  background: #dbeafe;
-  color: #1e40af;
+  background: #E0F7FF;
+  color: #0369A1;
   border-radius: 9999px;
   font-size: 0.75rem;
   font-weight: 500;
@@ -277,8 +277,8 @@
 }
 
 .bookmark-toggle:hover {
-  border-color: #2563eb;
-  background: #f0f9ff;
+  border-color: #38BDF8;
+  background: #E0F7FF;
 }
 
 .bookmark-toggle.bookmarked {

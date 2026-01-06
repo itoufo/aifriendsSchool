@@ -1,0 +1,286 @@
+{
+  "docId": "ai-security-privacy",
+  "title": "AIセキュリティとプライバシー 確認クイズ",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple",
+      "question": "敵対的攻撃の主な種類をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "回避攻撃（Evasion Attack）",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "正常な使用",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "ポイズニング攻撃",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "モデル抽出攻撃",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "敵対的攻撃には、推論時の回避攻撃、学習データへのポイズニング、モデル抽出などがあります。"
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "question": "差分プライバシーの基本原理は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "データの完全な暗号化",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "個人の有無が結果に与える影響を制限",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "データの削除",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "アクセス制御のみ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "差分プライバシーは、ノイズ追加により個人データの有無が統計結果に与える影響を数学的に制限します。"
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "question": "連合学習（Federated Learning）の主な利点は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "計算速度の向上",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "データを中央に集めずにモデル学習",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "モデル精度の保証",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "コストの削減のみ",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "連合学習は、データを各デバイスに残したまま、モデルの更新のみを共有してプライバシーを保護します。"
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "question": "モデル保護のための技術的対策をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "モデルの暗号化",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "完全な公開",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "ウォーターマーキング",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "アクセス制御とレート制限",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "モデル保護には、暗号化、ウォーターマーキング、アクセス制御など複数の技術的対策が必要です。"
+    },
+    {
+      "id": "q5",
+      "type": "single",
+      "question": "プロンプトインジェクション攻撃への最も効果的な対策は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "すべてのプロンプトを許可",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "入力検証とサンドボックス実行",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "モデルの再学習",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "レスポンスの高速化",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "プロンプトインジェクション対策には、厳格な入力検証とサンドボックス環境での実行が効果的です。"
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "question": "GDPRにおけるAIシステムの要求事項をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "自動意思決定の説明権",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "無制限のデータ収集",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "データ最小化原則",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "忘れられる権利の実装",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "GDPRは、説明権、データ最小化、忘れられる権利など、AIシステムに厳格な要求を課しています。"
+    },
+    {
+      "id": "q7",
+      "type": "single",
+      "question": "準同型暗号の特徴は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "暗号化データの復号が必要",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "暗号化したまま計算が可能",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "計算速度の向上",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "データサイズの削減",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "準同型暗号は、データを暗号化したまま計算を実行でき、復号せずに結果を得られる技術です。"
+    },
+    {
+      "id": "q8",
+      "type": "single",
+      "question": "メンバーシップ推論攻撃とは何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "モデルのパラメータ盗取",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "特定データが学習に使用されたか判定する攻撃",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "サービス拒否攻撃",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "データの改ざん",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "メンバーシップ推論攻撃は、特定のデータがモデルの学習に使用されたかを推測し、プライバシーを侵害する攻撃です。"
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "question": "セキュアなMLOpsパイプラインの要素をすべて選択してください。",
+      "options": [
+        {
+          "id": "a",
+          "text": "コード署名とイメージスキャン",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "セキュリティチェックの省略",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "秘密情報の安全な管理",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "監査ログの記録",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "セキュアなMLOpsには、コード署名、秘密管理、監査ログなど、多層的なセキュリティ対策が必要です。"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "question": "AIシステムのセキュリティ監査で最も重要な観点は何ですか？",
+      "options": [
+        {
+          "id": "a",
+          "text": "開発速度の評価のみ",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "脅威モデリングとリスク評価の包括的実施",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "コストの最小化",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "機能の追加",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "セキュリティ監査では、体系的な脅威モデリングとリスク評価により、潜在的な脆弱性を特定・対処することが重要です。"
+    }
+  ]
+}
