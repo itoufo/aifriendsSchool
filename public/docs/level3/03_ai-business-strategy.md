@@ -18,156 +18,65 @@
 ### 競争優位の源泉としてのAI
 
 #### 1. AI競争優位性の4つの次元
-```python
-class AICompetitiveAdvantage:
-    def __init__(self):
-        self.advantage_dimensions = {
-            "operational_excellence": {
-                "description": "業務効率・コスト削減による優位性",
-                "examples": ["プロセス自動化", "予測最適化", "品質向上"],
-                "metrics": ["コスト削減率", "生産性向上率", "エラー削減率"],
-                "sustainability": "中程度（他社も追随可能）"
-            },
-            "customer_intimacy": {
-                "description": "顧客理解・体験向上による優位性",
-                "examples": ["パーソナライゼーション", "予測的サポート", "感情分析"],
-                "metrics": ["顧客満足度", "LTV向上", "チャーン率低下"],
-                "sustainability": "高（顧客データの蓄積）"
-            },
-            "product_leadership": {
-                "description": "革新的製品・サービスによる優位性",
-                "examples": ["AI搭載製品", "新サービスモデル", "データ価値創造"],
-                "metrics": ["市場シェア", "価格プレミアム", "イノベーション指標"],
-                "sustainability": "高（技術・ノウハウ蓄積）"
-            },
-            "ecosystem_orchestration": {
-                "description": "エコシステム構築による優位性",
-                "examples": ["プラットフォーム構築", "データ連携", "パートナーシップ"],
-                "metrics": ["ネットワーク効果", "参加者数", "取引量"],
-                "sustainability": "非常に高（ネットワーク効果）"
-            }
-        }
-    
-    def assess_competitive_position(self, company_data):
-        """競争ポジション評価"""
-        assessment = {}
-        
-        for dimension, details in self.advantage_dimensions.items():
-            # 現在の強度評価
-            current_strength = self.evaluate_current_strength(company_data, dimension)
-            
-            # 将来ポテンシャル評価
-            future_potential = self.evaluate_future_potential(company_data, dimension)
-            
-            # 投資優先度計算
-            investment_priority = self.calculate_investment_priority(
-                current_strength, 
-                future_potential,
-                details["sustainability"]
-            )
-            
-            assessment[dimension] = {
-                "current_strength": current_strength,
-                "future_potential": future_potential,
-                "investment_priority": investment_priority,
-                "recommended_actions": self.generate_actions(dimension, current_strength)
-            }
-        
-        return {
-            "competitive_assessment": assessment,
-            "strategic_focus": self.recommend_strategic_focus(assessment),
-            "implementation_roadmap": self.create_implementation_roadmap(assessment)
-        }
-    
-    def recommend_strategic_focus(self, assessment):
-        """戦略的フォーカス推奨"""
-        # スコアリングとランキング
-        scored_dimensions = []
-        for dimension, data in assessment.items():
-            score = (
-                data["current_strength"] * 0.3 +
-                data["future_potential"] * 0.4 +
-                data["investment_priority"] * 0.3
-            )
-            scored_dimensions.append((dimension, score))
-        
-        scored_dimensions.sort(key=lambda x: x[1], reverse=True)
-        
-        # 戦略提言
-        primary_focus = scored_dimensions[0][0]
-        secondary_focus = scored_dimensions[1][0] if len(scored_dimensions) > 1 else None
-        
-        return {
-            "primary_focus": primary_focus,
-            "secondary_focus": secondary_focus,
-            "rationale": self.generate_strategic_rationale(primary_focus, assessment),
-            "resource_allocation": self.recommend_resource_allocation(scored_dimensions)
-        }
+
+**競争優位性フレームワーク**
+
+| 次元 | 概要 | 活用例 | 主要指標 | 持続性 |
+|-----|------|-------|---------|-------|
+| **業務卓越性** | 業務効率・コスト削減による優位性 | プロセス自動化、予測最適化、品質向上 | コスト削減率、生産性向上率、エラー削減率 | 中程度（他社追随可能） |
+| **顧客親密性** | 顧客理解・体験向上による優位性 | パーソナライゼーション、予測的サポート、感情分析 | 顧客満足度、LTV向上、チャーン率低下 | 高（顧客データ蓄積） |
+| **製品リーダーシップ** | 革新的製品・サービスによる優位性 | AI搭載製品、新サービスモデル、データ価値創造 | 市場シェア、価格プレミアム、イノベーション指標 | 高（技術・ノウハウ蓄積） |
+| **エコシステム構築** | プラットフォーム構築による優位性 | データ連携、パートナーシップ、API経済 | ネットワーク効果、参加者数、取引量 | 非常に高（ネットワーク効果） |
+
+**競争ポジション評価プロセス**
+```
+1. 各次元の現在強度評価（0-100）
+2. 将来ポテンシャル評価（0-100）
+3. 投資優先度計算: 現在強度×0.3 + 将来ポテンシャル×0.4 + 持続性×0.3
+4. スコア順でランキング → 戦略的フォーカス決定
 ```
 
+**戦略的フォーカスの選定基準**
+- **主要フォーカス**: 最高スコアの次元に集中投資
+- **副次フォーカス**: 2位の次元を補完的に強化
+- **リソース配分**: 主要70%、副次20%、探索10%
+
 #### 2. データ戦略とAI競争力
-```python
-class DataStrategyFramework:
-    def __init__(self):
-        self.data_maturity_levels = {
-            "level_1_reactive": {
-                "characteristics": ["サイロ化データ", "手動分析", "過去データ依存"],
-                "ai_readiness": "低",
-                "next_steps": ["データ統合", "基礎インフラ整備", "データガバナンス確立"]
-            },
-            "level_2_proactive": {
-                "characteristics": ["統合データ基盤", "定期分析", "KPIダッシュボード"],
-                "ai_readiness": "中",
-                "next_steps": ["リアルタイム分析", "予測モデル導入", "データ品質向上"]
-            },
-            "level_3_predictive": {
-                "characteristics": ["リアルタイム処理", "予測分析", "自動化意思決定"],
-                "ai_readiness": "高",
-                "next_steps": ["AI統合", "エッジ処理", "外部データ連携"]
-            },
-            "level_4_prescriptive": {
-                "characteristics": ["AI駆動意思決定", "自動最適化", "継続学習"],
-                "ai_readiness": "非常に高",
-                "next_steps": ["新ビジネスモデル", "データマネタイゼーション", "エコシステム構築"]
-            }
-        }
-    
-    def design_data_strategy(self, business_objectives):
-        """データ戦略設計"""
-        strategy_components = {
-            "data_architecture": self.design_architecture(business_objectives),
-            "data_governance": self.establish_governance_framework(),
-            "data_quality": self.define_quality_standards(),
-            "data_security": self.design_security_measures(),
-            "data_culture": self.plan_cultural_transformation()
-        }
-        
-        return strategy_components
-    
-    def design_architecture(self, objectives):
-        """データアーキテクチャ設計"""
-        architecture = {
-            "data_sources": {
-                "internal": ["ERP", "CRM", "IoTセンサー", "ログファイル"],
-                "external": ["市場データ", "ソーシャルメディア", "公開データセット"],
-                "third_party": ["パートナーデータ", "購買データ", "業界データ"]
-            },
-            "data_pipeline": {
-                "ingestion": "リアルタイム/バッチ取込み",
-                "processing": "ETL/ELT、ストリーム処理",
-                "storage": "データレイク/ウェアハウス",
-                "serving": "API、BI、MLプラットフォーム"
-            },
-            "technology_stack": {
-                "cloud_platform": ["AWS", "Azure", "GCP"],
-                "data_processing": ["Spark", "Flink", "Airflow"],
-                "ml_platform": ["SageMaker", "Azure ML", "Vertex AI"],
-                "analytics": ["Databricks", "Snowflake", "BigQuery"]
-            }
-        }
-        
-        return architecture
-```
+
+**データ成熟度モデル**
+
+| レベル | 特徴 | AI準備度 | 次のステップ |
+|-------|-----|---------|------------|
+| **レベル1: 反応型** | サイロ化データ、手動分析、過去データ依存 | 低 | データ統合、基礎インフラ整備、ガバナンス確立 |
+| **レベル2: 先見型** | 統合データ基盤、定期分析、KPIダッシュボード | 中 | リアルタイム分析、予測モデル導入、品質向上 |
+| **レベル3: 予測型** | リアルタイム処理、予測分析、自動化意思決定 | 高 | AI統合、エッジ処理、外部データ連携 |
+| **レベル4: 処方型** | AI駆動意思決定、自動最適化、継続学習 | 非常に高 | 新ビジネスモデル、データマネタイゼーション |
+
+**データ戦略の5つの構成要素**
+
+| 要素 | 内容 |
+|-----|------|
+| **データアーキテクチャ** | データソース、保存、処理の技術基盤設計 |
+| **データガバナンス** | ポリシー、標準、責任者の明確化 |
+| **データ品質** | 正確性、完全性、鮮度の基準設定 |
+| **データセキュリティ** | アクセス制御、暗号化、監査体制 |
+| **データカルチャー** | データドリブン意思決定の組織浸透 |
+
+**データアーキテクチャ設計例**
+
+| 層 | コンポーネント | 例 |
+|---|--------------|---|
+| **データソース** | 内部データ | ERP、CRM、IoTセンサー、ログファイル |
+| | 外部データ | 市場データ、ソーシャルメディア、公開データセット |
+| | サードパーティ | パートナーデータ、購買データ、業界データ |
+| **データパイプライン** | 取込み | リアルタイム/バッチ取込み |
+| | 処理 | ETL/ELT、ストリーム処理 |
+| | 保存 | データレイク/ウェアハウス |
+| | 配信 | API、BI、MLプラットフォーム |
+| **技術スタック** | クラウド | AWS、Azure、GCP |
+| | データ処理 | Spark、Flink、Airflow |
+| | MLプラットフォーム | SageMaker、Azure ML、Vertex AI |
+| | 分析基盤 | Databricks、Snowflake、BigQuery |
 
 ### 実践演習: 競争優位性分析
 

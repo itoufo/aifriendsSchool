@@ -41,57 +41,29 @@ AI時代組織の特徴:
 ### AIチームの構成要素
 
 #### 1. 多様なロール・スキルセット
-```python
-# AIチーム構成例
-ai_team_structure = {
-    "技術系": {
-        "AI Engineer": {
-            "primary_skills": ["機械学習", "データ処理", "システム設計"],
-            "responsibilities": ["モデル開発", "API実装", "性能最適化"],
-            "collaboration_with": ["データサイエンティスト", "プロダクトマネージャー"]
-        },
-        "Data Scientist": {
-            "primary_skills": ["統計分析", "データ可視化", "ビジネス理解"],
-            "responsibilities": ["データ分析", "インサイト抽出", "予測モデル"],
-            "collaboration_with": ["ビジネスアナリスト", "ドメインエキスパート"]
-        },
-        "MLOps Engineer": {
-            "primary_skills": ["DevOps", "クラウドインフラ", "モニタリング"],
-            "responsibilities": ["モデルデプロイ", "パイプライン構築", "運用管理"],
-            "collaboration_with": ["AI Engineer", "システム管理者"]
-        }
-    },
-    "ビジネス系": {
-        "AI Product Manager": {
-            "primary_skills": ["プロダクト戦略", "ステークホルダー管理", "AI理解"],
-            "responsibilities": ["要件定義", "ロードマップ策定", "価値測定"],
-            "collaboration_with": ["全チームメンバー"]
-        },
-        "Business Analyst": {
-            "primary_skills": ["業務分析", "プロセス改善", "データ活用"],
-            "responsibilities": ["課題特定", "ROI分析", "効果測定"],
-            "collaboration_with": ["ドメインエキスパート", "Data Scientist"]
-        },
-        "Change Manager": {
-            "primary_skills": ["組織変革", "トレーニング", "コミュニケーション"],
-            "responsibilities": ["変革推進", "ユーザー支援", "文化醸成"],
-            "collaboration_with": ["HR", "各部門マネージャー"]
-        }
-    },
-    "サポート系": {
-        "AI Ethics Officer": {
-            "primary_skills": ["AI倫理", "法務理解", "リスク管理"],
-            "responsibilities": ["倫理審査", "バイアス監視", "コンプライアンス"],
-            "collaboration_with": ["法務", "監査", "経営陣"]
-        },
-        "UX Designer": {
-            "primary_skills": ["ユーザー体験設計", "インターフェース設計", "ユーザビリティ"],
-            "responsibilities": ["AI UX設計", "ユーザーテスト", "体験最適化"],
-            "collaboration_with": ["プロダクトマネージャー", "開発チーム"]
-        }
-    }
-}
-```
+
+**技術系ロール**
+
+| ロール | 主要スキル | 主な責務 | 連携先 |
+|-------|----------|---------|-------|
+| **AIエンジニア** | 機械学習、データ処理、システム設計 | モデル開発、API実装、性能最適化 | データサイエンティスト、PM |
+| **データサイエンティスト** | 統計分析、データ可視化、ビジネス理解 | データ分析、インサイト抽出、予測モデル | ビジネスアナリスト、ドメインエキスパート |
+| **MLOpsエンジニア** | DevOps、クラウドインフラ、モニタリング | モデルデプロイ、パイプライン構築、運用管理 | AIエンジニア、システム管理者 |
+
+**ビジネス系ロール**
+
+| ロール | 主要スキル | 主な責務 | 連携先 |
+|-------|----------|---------|-------|
+| **AIプロダクトマネージャー** | プロダクト戦略、ステークホルダー管理、AI理解 | 要件定義、ロードマップ策定、価値測定 | 全チームメンバー |
+| **ビジネスアナリスト** | 業務分析、プロセス改善、データ活用 | 課題特定、ROI分析、効果測定 | ドメインエキスパート、データサイエンティスト |
+| **チェンジマネージャー** | 組織変革、トレーニング、コミュニケーション | 変革推進、ユーザー支援、文化醸成 | HR、各部門マネージャー |
+
+**サポート系ロール**
+
+| ロール | 主要スキル | 主な責務 | 連携先 |
+|-------|----------|---------|-------|
+| **AI倫理オフィサー** | AI倫理、法務理解、リスク管理 | 倫理審査、バイアス監視、コンプライアンス | 法務、監査、経営陣 |
+| **UXデザイナー** | ユーザー体験設計、インターフェース設計、ユーザビリティ | AI UX設計、ユーザーテスト、体験最適化 | プロダクトマネージャー、開発チーム |
 
 #### 2. チーム運営の実践手法
 
@@ -231,82 +203,30 @@ Phase 3（3年目）: 自立・拡散
 ### AI特有のプロジェクト特性理解
 
 #### 1. 不確実性への対処
-```python
-class AIProjectRiskManager:
-    def __init__(self):
-        self.risk_categories = {
-            "technical": {
-                "data_quality": {"probability": 0.7, "impact": "high"},
-                "model_performance": {"probability": 0.5, "impact": "medium"},
-                "scalability": {"probability": 0.3, "impact": "high"}
-            },
-            "business": {
-                "requirements_change": {"probability": 0.6, "impact": "medium"},
-                "stakeholder_alignment": {"probability": 0.4, "impact": "high"},
-                "roi_uncertainty": {"probability": 0.8, "impact": "medium"}
-            },
-            "regulatory": {
-                "compliance_change": {"probability": 0.2, "impact": "high"},
-                "data_privacy": {"probability": 0.3, "impact": "high"},
-                "ai_ethics": {"probability": 0.4, "impact": "medium"}
-            }
-        }
-    
-    def assess_project_risk(self, project_context):
-        """プロジェクトリスク評価"""
-        risk_score = 0
-        critical_risks = []
-        
-        for category, risks in self.risk_categories.items():
-            for risk_name, risk_data in risks.items():
-                # コンテキストに基づくリスク確率調整
-                adjusted_probability = self.adjust_probability(
-                    risk_data["probability"], 
-                    project_context, 
-                    risk_name
-                )
-                
-                impact_score = self.get_impact_score(risk_data["impact"])
-                risk_value = adjusted_probability * impact_score
-                risk_score += risk_value
-                
-                if risk_value > 0.6:  # 高リスク閾値
-                    critical_risks.append({
-                        "category": category,
-                        "risk": risk_name,
-                        "probability": adjusted_probability,
-                        "impact": risk_data["impact"],
-                        "mitigation": self.get_mitigation_strategy(risk_name)
-                    })
-        
-        return {
-            "overall_risk_score": risk_score,
-            "risk_level": self.categorize_risk_level(risk_score),
-            "critical_risks": critical_risks,
-            "recommendations": self.generate_recommendations(critical_risks)
-        }
-    
-    def get_mitigation_strategy(self, risk_name):
-        """リスク対策戦略"""
-        strategies = {
-            "data_quality": [
-                "データ品質チェック自動化導入",
-                "データソース多様化",
-                "段階的データ改善計画"
-            ],
-            "model_performance": [
-                "ベースラインモデル早期構築",
-                "A/Bテスト環境整備",
-                "継続的モデル評価プロセス"
-            ],
-            "requirements_change": [
-                "アジャイル開発手法採用",
-                "定期的ステークホルダーレビュー",
-                "プロトタイプによる早期検証"
-            ]
-        }
-        return strategies.get(risk_name, ["専門家相談", "詳細分析実施"])
+
+**AIプロジェクトリスクカテゴリー**
+
+| カテゴリ | リスク項目 | 発生確率 | 影響度 | 主な対策 |
+|---------|----------|---------|--------|---------|
+| **技術** | データ品質 | 70% | 高 | 品質チェック自動化、データソース多様化、段階的改善 |
+| **技術** | モデル性能 | 50% | 中 | ベースライン早期構築、A/Bテスト、継続的評価 |
+| **技術** | スケーラビリティ | 30% | 高 | アーキテクチャ設計レビュー、負荷テスト |
+| **ビジネス** | 要件変更 | 60% | 中 | アジャイル開発、定期レビュー、プロトタイプ検証 |
+| **ビジネス** | ステークホルダー調整 | 40% | 高 | 早期巻き込み、定期コミュニケーション |
+| **ビジネス** | ROI不確実性 | 80% | 中 | 段階的投資、KPI設定、効果測定プロセス |
+| **規制** | コンプライアンス変更 | 20% | 高 | 法務連携、動向監視、柔軟な設計 |
+| **規制** | データプライバシー | 30% | 高 | プライバシー・バイ・デザイン、監査体制 |
+| **規制** | AI倫理 | 40% | 中 | 倫理審査プロセス、バイアス監視 |
+
+**リスク評価プロセス**
 ```
+1. リスク識別 → 2. 確率・影響度評価 → 3. リスクスコア算出 → 4. 対策優先順位決定 → 5. 対策実施・監視
+```
+
+**リスク判定基準**
+- **高リスク（スコア > 0.6）**: 即座の対策実施・エスカレーション必要
+- **中リスク**: 計画的対策・定期モニタリング
+- **低リスク**: 継続監視・予防的対策
 
 #### 2. 実験駆動型開発の実践
 ```python
@@ -572,80 +492,28 @@ class AITransformationLeader:
 ```
 
 #### 2. 抵抗管理・合意形成
-```python
-class ChangeResistanceManager:
-    def __init__(self):
-        self.resistance_patterns = {
-            "knowledge_gap": {
-                "symptoms": ["AI理解不足", "技術不安", "複雑性への懸念"],
-                "interventions": ["教育プログラム", "ハンズオン研修", "メンター制度"]
-            },
-            "job_security": {
-                "symptoms": ["雇用不安", "スキル陳腐化恐れ", "役割変化への抵抗"],
-                "interventions": ["リスキリング支援", "キャリアパス明示", "段階的移行"]
-            },
-            "cultural_mismatch": {
-                "symptoms": ["既存文化との衝突", "価値観の違い", "変化への嫌悪"],
-                "interventions": ["文化変革プログラム", "成功事例共有", "リーダー模範"]
-            },
-            "resource_concerns": {
-                "symptoms": ["予算・時間不足", "優先度の競合", "投資対効果疑問"],
-                "interventions": ["ROI明示", "段階的投資", "クイックウィン創出"]
-            }
-        }
-    
-    def diagnose_resistance(self, feedback_data):
-        """抵抗要因診断"""
-        resistance_analysis = {}
-        
-        for pattern_name, pattern_data in self.resistance_patterns.items():
-            resistance_score = 0
-            detected_symptoms = []
-            
-            for symptom in pattern_data["symptoms"]:
-                if self.detect_symptom_in_feedback(symptom, feedback_data):
-                    resistance_score += 1
-                    detected_symptoms.append(symptom)
-            
-            if resistance_score > 0:
-                resistance_analysis[pattern_name] = {
-                    "score": resistance_score / len(pattern_data["symptoms"]),
-                    "symptoms": detected_symptoms,
-                    "recommended_interventions": pattern_data["interventions"]
-                }
-        
-        return resistance_analysis
-    
-    def design_intervention_plan(self, resistance_analysis):
-        """抵抗対策計画設計"""
-        intervention_plan = {
-            "immediate_actions": [],
-            "short_term_initiatives": [],
-            "long_term_programs": [],
-            "success_indicators": []
-        }
-        
-        for resistance_type, details in resistance_analysis.items():
-            priority = self.calculate_intervention_priority(details["score"])
-            
-            for intervention in details["recommended_interventions"]:
-                categorized_action = {
-                    "action": intervention,
-                    "target_resistance": resistance_type,
-                    "priority": priority,
-                    "timeline": self.estimate_timeline(intervention),
-                    "resources": self.estimate_resources(intervention)
-                }
-                
-                if priority == "high":
-                    intervention_plan["immediate_actions"].append(categorized_action)
-                elif priority == "medium":
-                    intervention_plan["short_term_initiatives"].append(categorized_action)
-                else:
-                    intervention_plan["long_term_programs"].append(categorized_action)
-        
-        return intervention_plan
+
+**変革抵抗のパターンと対策**
+
+| 抵抗タイプ | 症状・兆候 | 推奨される介入策 |
+|-----------|----------|----------------|
+| **知識ギャップ** | AI理解不足、技術不安、複雑性への懸念 | 教育プログラム、ハンズオン研修、メンター制度 |
+| **雇用不安** | 雇用喪失への恐れ、スキル陳腐化懸念、役割変化への抵抗 | リスキリング支援、キャリアパス明示、段階的移行 |
+| **文化的ミスマッチ** | 既存文化との衝突、価値観の違い、変化への嫌悪感 | 文化変革プログラム、成功事例共有、リーダーの模範 |
+| **リソース懸念** | 予算・時間不足、優先度の競合、投資対効果への疑問 | ROI明示、段階的投資、クイックウィン創出 |
+
+**抵抗診断プロセス**
 ```
+フィードバック収集 → 症状パターン照合 → 抵抗スコア算出 → 介入策優先順位付け
+```
+
+**対策計画の分類**
+
+| 優先度 | 対応時期 | 対象 |
+|-------|---------|-----|
+| **高（即時対応）** | 1週間以内 | 抵抗スコアが高い課題 |
+| **中（短期施策）** | 1-3ヶ月 | 中程度の抵抗 |
+| **低（長期プログラム）** | 3ヶ月以上 | 予防的・構造的対策 |
 
 ### 実践的チェンジマネジメント
 
@@ -876,73 +744,39 @@ class AITalentDevelopment:
 ### 実践的評価システム
 
 #### AIスキル評価フレームワーク
-```python
-class AISkillAssessment:
-    def __init__(self):
-        self.assessment_dimensions = {
-            "technical_proficiency": {
-                "weight": 0.4,
-                "sub_categories": {
-                    "programming": {"weight": 0.3, "metrics": ["コード品質", "実装速度", "デバッグ能力"]},
-                    "ml_knowledge": {"weight": 0.4, "metrics": ["アルゴリズム理解", "モデル選択", "ハイパーパラメータ調整"]},
-                    "data_skills": {"weight": 0.3, "metrics": ["データ処理", "特徴量設計", "可視化"]}
-                }
-            },
-            "business_impact": {
-                "weight": 0.3,
-                "sub_categories": {
-                    "problem_solving": {"weight": 0.4, "metrics": ["課題特定", "解決策設計", "実装完遂"]},
-                    "stakeholder_management": {"weight": 0.3, "metrics": ["要件理解", "進捗報告", "期待管理"]},
-                    "value_creation": {"weight": 0.3, "metrics": ["ROI貢献", "業務改善", "イノベーション"]}
-                }
-            },
-            "collaboration": {
-                "weight": 0.2,
-                "sub_categories": {
-                    "teamwork": {"weight": 0.4, "metrics": ["チーム貢献", "知識共有", "相互支援"]},
-                    "communication": {"weight": 0.3, "metrics": ["技術説明", "プレゼン", "ドキュメント"]},
-                    "mentoring": {"weight": 0.3, "metrics": ["後輩指導", "知識伝承", "組織学習"]}
-                }
-            },
-            "continuous_learning": {
-                "weight": 0.1,
-                "sub_categories": {
-                    "self_development": {"weight": 0.5, "metrics": ["新技術習得", "資格取得", "学習時間"]},
-                    "innovation": {"weight": 0.5, "metrics": ["新手法提案", "実験実施", "改善提案"]}
-                }
-            }
-        }
-    
-    def conduct_comprehensive_assessment(self, employee_id):
-        """包括的スキル評価実施"""
-        assessment_results = {}
-        
-        for dimension, dimension_data in self.assessment_dimensions.items():
-            dimension_score = 0
-            
-            for sub_cat, sub_data in dimension_data["sub_categories"].items():
-                # 各サブカテゴリーの評価実施
-                sub_score = self.evaluate_subcategory(employee_id, dimension, sub_cat)
-                dimension_score += sub_score * sub_data["weight"]
-            
-            assessment_results[dimension] = {
-                "score": dimension_score,
-                "weight": dimension_data["weight"],
-                "weighted_score": dimension_score * dimension_data["weight"]
-            }
-        
-        # 総合スコア計算
-        overall_score = sum(result["weighted_score"] for result in assessment_results.values())
-        
-        return {
-            "employee_id": employee_id,
-            "assessment_date": datetime.now(),
-            "dimension_scores": assessment_results,
-            "overall_score": overall_score,
-            "performance_level": self.categorize_performance_level(overall_score),
-            "development_recommendations": self.generate_development_recommendations(assessment_results)
-        }
+
+**評価ディメンション構成**
+
+| ディメンション | 全体配分 | サブカテゴリ | 配分 | 評価指標 |
+|--------------|---------|------------|-----|---------|
+| **技術力** | 40% | プログラミング | 30% | コード品質、実装速度、デバッグ能力 |
+| | | ML知識 | 40% | アルゴリズム理解、モデル選択、ハイパーパラメータ調整 |
+| | | データスキル | 30% | データ処理、特徴量設計、可視化 |
+| **ビジネスインパクト** | 30% | 問題解決 | 40% | 課題特定、解決策設計、実装完遂 |
+| | | ステークホルダー管理 | 30% | 要件理解、進捗報告、期待管理 |
+| | | 価値創造 | 30% | ROI貢献、業務改善、イノベーション |
+| **協働力** | 20% | チームワーク | 40% | チーム貢献、知識共有、相互支援 |
+| | | コミュニケーション | 30% | 技術説明、プレゼン、ドキュメント |
+| | | メンタリング | 30% | 後輩指導、知識伝承、組織学習 |
+| **継続学習** | 10% | 自己開発 | 50% | 新技術習得、資格取得、学習時間 |
+| | | イノベーション | 50% | 新手法提案、実験実施、改善提案 |
+
+**評価プロセス**
 ```
+1. 各指標を5点満点で評価
+2. サブカテゴリ内で配分に従って加重平均
+3. ディメンション内で加重平均
+4. 全ディメンションを配分で加重して総合スコア算出
+```
+
+**パフォーマンスレベル判定**
+
+| 総合スコア | レベル | 推奨アクション |
+|----------|-------|--------------|
+| 80点以上 | 優秀 | 昇進・リーダー候補 |
+| 60-79点 | 良好 | 強化領域の開発計画 |
+| 40-59点 | 標準 | 体系的育成プログラム |
+| 40点未満 | 要改善 | 集中的サポート・研修 |
 
 ---
 

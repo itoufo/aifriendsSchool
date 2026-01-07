@@ -18,172 +18,98 @@
 ### システム設計の原則
 
 #### 1. マイクロサービスベースのAIアーキテクチャ
-```python
-# AIマイクロサービスアーキテクチャ設計
-class AIServiceArchitecture:
-    def __init__(self):
-        self.services = {
-            "data_ingestion": {
-                "purpose": "データ収集・前処理",
-                "technologies": ["Apache Kafka", "AWS Kinesis", "Apache NiFi"],
-                "scalability": "水平スケーリング",
-                "interfaces": ["REST API", "gRPC", "WebSocket"]
-            },
-            "feature_engineering": {
-                "purpose": "特徴量生成・変換",
-                "technologies": ["Apache Spark", "Dask", "Ray"],
-                "scalability": "分散処理",
-                "storage": ["Feature Store", "Redis", "DynamoDB"]
-            },
-            "model_serving": {
-                "purpose": "推論エンドポイント",
-                "technologies": ["TensorFlow Serving", "TorchServe", "MLflow"],
-                "deployment": ["Kubernetes", "AWS SageMaker", "Azure ML"],
-                "patterns": ["A/Bテスト", "カナリアリリース", "影の実行"]
-            },
-            "monitoring": {
-                "purpose": "性能監視・アラート",
-                "technologies": ["Prometheus", "Grafana", "DataDog"],
-                "metrics": ["レイテンシ", "スループット", "精度", "ドリフト"],
-                "alerting": ["PagerDuty", "Slack", "Email"]
-            }
-        }
-    
-    def design_reference_architecture(self, requirements):
-        """リファレンスアーキテクチャ設計"""
-        architecture = {
-            "layers": {
-                "presentation": self.design_presentation_layer(requirements),
-                "api_gateway": self.design_api_gateway(requirements),
-                "business_logic": self.design_business_logic(requirements),
-                "ml_services": self.design_ml_services(requirements),
-                "data_layer": self.design_data_layer(requirements),
-                "infrastructure": self.design_infrastructure(requirements)
-            },
-            "cross_cutting_concerns": {
-                "security": self.design_security_layer(),
-                "monitoring": self.design_monitoring_layer(),
-                "logging": self.design_logging_layer(),
-                "governance": self.design_governance_layer()
-            },
-            "deployment": self.design_deployment_strategy(requirements)
-        }
-        
-        return architecture
-    
-    def design_ml_services(self, requirements):
-        """ML サービス層設計"""
-        return {
-            "training_pipeline": {
-                "orchestration": "Apache Airflow / Kubeflow",
-                "compute": "GPU クラスター / TPU",
-                "experiment_tracking": "MLflow / Weights & Biases",
-                "model_registry": "MLflow Model Registry / AWS Model Registry"
-            },
-            "inference_service": {
-                "online": {
-                    "latency": "< 100ms",
-                    "throughput": "> 1000 QPS",
-                    "availability": "99.9%",
-                    "deployment": "Blue-Green / Canary"
-                },
-                "batch": {
-                    "scheduling": "Cron / Event-driven",
-                    "processing": "Spark / Batch Transform",
-                    "storage": "S3 / HDFS"
-                },
-                "streaming": {
-                    "framework": "Kafka Streams / Flink",
-                    "latency": "< 1s",
-                    "processing": "Windowing / Aggregation"
-                }
-            },
-            "model_management": {
-                "versioning": "Git LFS / DVC",
-                "lifecycle": "Development → Staging → Production",
-                "rollback": "自動ロールバック機能",
-                "monitoring": "精度モニタリング / ドリフト検出"
-            }
-        }
+
+**AIマイクロサービスコンポーネント**
+
+| サービス | 目的 | 技術スタック | スケーリング |
+|---------|-----|-------------|-------------|
+| **データ取り込み** | データ収集・前処理 | Apache Kafka, AWS Kinesis, Apache NiFi | 水平スケーリング |
+| **特徴量エンジニアリング** | 特徴量生成・変換 | Apache Spark, Dask, Ray | 分散処理 |
+| **モデルサービング** | 推論エンドポイント | TensorFlow Serving, TorchServe, MLflow | Kubernetes, SageMaker |
+| **モニタリング** | 性能監視・アラート | Prometheus, Grafana, DataDog | - |
+
+**リファレンスアーキテクチャ層**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    プレゼンテーション層                       │
+├─────────────────────────────────────────────────────────────┤
+│                    API ゲートウェイ層                        │
+├─────────────────────────────────────────────────────────────┤
+│                    ビジネスロジック層                        │
+├─────────────────────────────────────────────────────────────┤
+│                    ML サービス層                             │
+│  ┌─────────────┬─────────────┬─────────────┐               │
+│  │学習パイプライン │推論サービス   │モデル管理    │               │
+│  └─────────────┴─────────────┴─────────────┘               │
+├─────────────────────────────────────────────────────────────┤
+│                    データ層                                  │
+├─────────────────────────────────────────────────────────────┤
+│                    インフラストラクチャ層                     │
+└─────────────────────────────────────────────────────────────┘
+       ↑ 横断的関心事: セキュリティ | 監視 | ロギング | ガバナンス
 ```
 
+**MLサービス層の詳細設計**
+
+| コンポーネント | 構成要素 | 技術選択 |
+|--------------|---------|---------|
+| **学習パイプライン** | オーケストレーション | Apache Airflow / Kubeflow |
+| | コンピュート | GPU クラスター / TPU |
+| | 実験追跡 | MLflow / Weights & Biases |
+| | モデルレジストリ | MLflow / AWS Model Registry |
+| **オンライン推論** | レイテンシ | < 100ms |
+| | スループット | > 1000 QPS |
+| | 可用性 | 99.9% |
+| | デプロイ | Blue-Green / Canary |
+| **バッチ推論** | スケジューリング | Cron / Event-driven |
+| | 処理 | Spark / Batch Transform |
+| **ストリーミング推論** | フレームワーク | Kafka Streams / Flink |
+| | レイテンシ | < 1s |
+
 #### 2. イベント駆動アーキテクチャ
+
+**Kafkaトピック設計**
+
+| トピック名 | パーティション数 | レプリカ数 | 用途 |
+|-----------|----------------|----------|-----|
+| data-ingestion | 10 | 3 | データ取り込みイベント |
+| feature-computed | 5 | 3 | 特徴量計算完了イベント |
+| prediction-request | 20 | 3 | 推論リクエスト |
+| prediction-result | 20 | 3 | 推論結果 |
+| model-update | 1 | 3 | モデル更新イベント |
+
+**イベントフロー**
+
+```
+データ取り込み → 検証 → 特徴量計算 → Feature Store保存
+                                    ↓
+推論リクエスト → 特徴量取得 → モデル推論 → 結果公開 → メトリクス記録
+                                    ↓
+モデル更新 → 検証 → カナリアデプロイ → メトリクス監視 → 段階的ロールアウト
+```
+
+**イベントハンドラーパターン**
+
 ```python
-class EventDrivenMLArchitecture:
-    def __init__(self):
-        self.event_bus_config = {
-            "broker": "Apache Kafka",
-            "topics": {
-                "data-ingestion": {"partitions": 10, "replication": 3},
-                "feature-computed": {"partitions": 5, "replication": 3},
-                "prediction-request": {"partitions": 20, "replication": 3},
-                "prediction-result": {"partitions": 20, "replication": 3},
-                "model-update": {"partitions": 1, "replication": 3}
-            }
-        }
-    
-    def implement_event_handlers(self):
-        """イベントハンドラー実装"""
-        handlers = {
-            "data_ingestion_handler": """
-            @event_handler('data-ingestion')
-            async def process_new_data(event):
-                # データ検証
-                validated_data = await validate_schema(event.data)
-                
-                # 特徴量計算トリガー
-                await publish_event('feature-computation', {
-                    'data_id': validated_data.id,
-                    'timestamp': datetime.now()
-                })
-                
-                # データレイク保存
-                await store_to_data_lake(validated_data)
-            """,
-            
-            "prediction_handler": """
-            @event_handler('prediction-request')
-            async def handle_prediction(event):
-                # 特徴量取得
-                features = await feature_store.get(event.feature_ids)
-                
-                # モデル推論
-                model = await model_registry.get_latest(event.model_name)
-                prediction = await model.predict(features)
-                
-                # 結果公開
-                await publish_event('prediction-result', {
-                    'request_id': event.request_id,
-                    'prediction': prediction,
-                    'confidence': prediction.confidence,
-                    'model_version': model.version
-                })
-                
-                # メトリクス記録
-                await metrics.record_prediction(prediction)
-            """,
-            
-            "model_update_handler": """
-            @event_handler('model-update')
-            async def update_model(event):
-                # 新モデル検証
-                validation_result = await validate_model(event.model)
-                
-                if validation_result.passed:
-                    # カナリアデプロイ
-                    await deploy_canary(event.model, traffic_percentage=10)
-                    
-                    # メトリクス監視
-                    await monitor_canary_metrics(event.model.id)
-                    
-                    # 段階的ロールアウト
-                    await schedule_progressive_rollout(event.model.id)
-                else:
-                    await alert_team(validation_result.errors)
-            """
-        }
-        
-        return handlers
+# データ取り込みハンドラー例
+@event_handler('data-ingestion')
+async def process_new_data(event):
+    validated_data = await validate_schema(event.data)
+    await publish_event('feature-computation', {'data_id': validated_data.id})
+    await store_to_data_lake(validated_data)
+
+# 推論リクエストハンドラー例
+@event_handler('prediction-request')
+async def handle_prediction(event):
+    features = await feature_store.get(event.feature_ids)
+    model = await model_registry.get_latest(event.model_name)
+    prediction = await model.predict(features)
+    await publish_event('prediction-result', {
+        'request_id': event.request_id,
+        'prediction': prediction,
+        'model_version': model.version
+    })
 ```
 
 ### 実践的な実装パターン
