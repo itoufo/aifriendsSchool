@@ -134,31 +134,31 @@ export const curriculum: Section[] = [
     targetAudience: '部署やチームのDXを推進するリーダー、マネージャー',
     duration: '8週間（週10時間程度の学習を想定）',
     items: [
-      { 
-        id: 'ai-project-management', 
-        title: 'AIプロジェクトマネジメント', 
-        path: '/docs/level3/01_ai-project-management.md',
+      {
+        id: 'custom-ai-development',
+        title: 'カスタムAI開発・実装',
+        path: '/docs/level3/01_custom-ai-development.md',
         duration: '1-2週目',
         level: 'advanced'
       },
-      { 
-        id: 'custom-ai-vibes-coding', 
-        title: 'カスタムAIとVibesコーディングの理解', 
-        path: '/docs/level3/02_custom-ai-vibes-coding.md',
+      {
+        id: 'ai-team-leadership',
+        title: 'AIチームリーダーシップ',
+        path: '/docs/level3/02_ai-team-leadership.md',
         duration: '3-4週目',
         level: 'advanced'
       },
-      { 
-        id: 'ai-governance-organization', 
-        title: 'AIガバナンスと組織導入', 
-        path: '/docs/level3/03_ai-governance-organization.md',
+      {
+        id: 'ai-business-strategy',
+        title: 'AIビジネス戦略・事業創造',
+        path: '/docs/level3/03_ai-business-strategy.md',
         duration: '5-6週目',
         level: 'advanced'
       },
-      { 
-        id: 'business-strategy-leadership', 
-        title: 'ビジネス戦略とリーダーシップ', 
-        path: '/docs/level3/04_business-strategy-leadership.md',
+      {
+        id: 'ai-society-impact',
+        title: 'AI社会実装とインパクト',
+        path: '/docs/level3/04_ai-society-impact.md',
         duration: '7-8週目',
         level: 'advanced'
       },
@@ -171,31 +171,31 @@ export const curriculum: Section[] = [
     targetAudience: 'AI技術を自身の専門分野に活かしたいITエンジニア、開発者',
     duration: '10週間（週10-15時間程度の学習を想定）',
     items: [
-      { 
-        id: 'ai-native-development-environment', 
-        title: 'AIネイティブ開発環境と新パラダイム', 
-        path: '/docs/level4/01_ai-native-development-environment.md',
+      {
+        id: 'ai-infrastructure-architecture',
+        title: 'AIインフラストラクチャ設計',
+        path: '/docs/level4/01_ai-infrastructure-architecture.md',
         duration: '1-2週目',
         level: 'engineer'
       },
-      { 
-        id: 'machine-learning-mlops', 
-        title: '実践・機械学習とMLOps', 
-        path: '/docs/level4/02_machine-learning-mlops.md',
+      {
+        id: 'advanced-ml-engineering',
+        title: '高度な機械学習エンジニアリング',
+        path: '/docs/level4/02_advanced-ml-engineering.md',
         duration: '3-4週目',
         level: 'engineer'
       },
-      { 
-        id: 'generative-ai-applications', 
-        title: '生成AIアプリケーション開発', 
-        path: '/docs/level4/03_generative-ai-applications.md',
+      {
+        id: 'production-ai-systems',
+        title: '本番AIシステム構築',
+        path: '/docs/level4/03_production-ai-systems.md',
         duration: '5-7週目',
         level: 'engineer'
       },
-      { 
-        id: 'business-technology-bridge', 
-        title: 'ビジネスと技術の架け橋', 
-        path: '/docs/level4/04_business-technology-bridge.md',
+      {
+        id: 'ai-security-privacy',
+        title: 'AIセキュリティとプライバシー',
+        path: '/docs/level4/04_ai-security-privacy.md',
         duration: '8-10週目',
         level: 'engineer'
       },
@@ -208,31 +208,31 @@ export const curriculum: Section[] = [
     targetAudience: '企業のDXやAI戦略を担う経営層、事業責任者',
     duration: '4週間（週8時間の学習・ディスカッションを想定。ケーススタディ中心）',
     items: [
-      { 
-        id: 'ai-business-strategy-integration', 
-        title: 'AIと経営戦略の統合', 
-        path: '/docs/level5/01_ai-business-strategy-integration.md',
+      {
+        id: 'ai-corporate-strategy',
+        title: 'AI経営戦略',
+        path: '/docs/level5/01_ai-corporate-strategy.md',
         duration: '1週目',
         level: 'executive'
       },
-      { 
-        id: 'ai-era-organization-talent', 
-        title: 'AI時代の組織と人材', 
-        path: '/docs/level5/02_ai-era-organization-talent.md',
+      {
+        id: 'investment-roi-measurement',
+        title: 'AI投資とROI測定',
+        path: '/docs/level5/02_investment-roi-measurement.md',
         duration: '2週目',
         level: 'executive'
       },
-      { 
-        id: 'ai-investment-risk-management', 
-        title: 'AI投資とリスクマネジメント', 
-        path: '/docs/level5/03_ai-investment-risk-management.md',
+      {
+        id: 'organization-culture-change',
+        title: '組織文化変革',
+        path: '/docs/level5/03_organization-culture-change.md',
         duration: '3週目',
         level: 'executive'
       },
       {
-        id: 'vision-leadership',
-        title: 'ビジョンとリーダーシップ',
-        path: '/docs/level5/04_vision-leadership.md',
+        id: 'ai-governance-ethics',
+        title: 'AIガバナンスと倫理',
+        path: '/docs/level5/04_ai-governance-ethics.md',
         duration: '4週目',
         level: 'executive'
       },
