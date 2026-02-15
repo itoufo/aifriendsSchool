@@ -1,10 +1,12 @@
+'use client';
+
 import { useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import Link from 'next/link';
 import { Sidebar } from './Sidebar';
 import { AppConfig } from '../config/app.config';
 import './Layout.css';
 
-export const Layout = () => {
+export const LayoutShell = ({ children }: { children: React.ReactNode }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -21,7 +23,9 @@ export const Layout = () => {
               <path d="M3 12h18M3 6h18M3 18h18" />
             </svg>
           </button>
-          <h1 className="top-bar-title">{AppConfig.branding.title}</h1>
+          <Link href="/" className="top-bar-title" aria-label="ホームへ">
+            {AppConfig.branding.title}
+          </Link>
           <img
             src={AppConfig.branding.logo.src}
             alt={AppConfig.branding.logo.alt}
@@ -29,7 +33,7 @@ export const Layout = () => {
           />
         </header>
         <main className="main-content">
-          <Outlet />
+          {children}
         </main>
         <footer className="site-footer">
           <p>{AppConfig.branding.footer.text}</p>

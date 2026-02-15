@@ -1,12 +1,56 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git branch:*)",
-      "Bash(git push:*)",
-      "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "mcp__ruv-swarm",
+      "mcp__claude-flow@alpha",
+      "mcp__flow-nexus",
+      "Bash(mkdir:*)",
+      "mcp__nanobanana__nanobanana_generate",
+      "Bash(for f in )",
+      "Bash(\"public/docs/level0/00_getting-started.md\" )",
+      "Bash(\"public/docs/level0/01_ai-services-guide.md\" )",
+      "Bash(\"public/docs/level1/01_ai-literacy-and-ethics.md\" )",
+      "Bash(\"public/docs/level1/02_prompt-engineering-basics.md\" )",
+      "Bash(\"public/docs/level1/03_business-efficiency.md\" )",
+      "Bash(\"public/docs/level1/04_human-skills-integration.md\" )",
+      "Bash(\"public/docs/level1/05_hands-on-exercises.md\" )",
+      "Bash(\"public/docs/level2/01_advanced-prompt-engineering.md\" )",
+      "Bash(\"public/docs/level2/02_data-analysis-insights.md\" )",
+      "Bash(\"public/docs/level2/03_process-automation.md\" )",
+      "Bash(\"public/docs/level2/04_business-planning-communication.md\" )",
+      "Bash(\"public/docs/level2/05_hands-on-exercises.md\" )",
+      "Bash(\"public/docs/level3/01_custom-ai-development.md\" )",
+      "Bash(\"public/docs/level3/02_ai-team-leadership.md\" )",
+      "Bash(\"public/docs/level3/03_ai-business-strategy.md\" )",
+      "Bash(\"public/docs/level3/04_ai-society-impact.md\" )",
+      "Bash(\"public/docs/level4/01_ai-infrastructure-architecture.md\" )",
+      "Bash(\"public/docs/level4/02_advanced-ml-engineering.md\" )",
+      "Bash(\"public/docs/level4/03_production-ai-systems.md\" )",
+      "Bash(\"public/docs/level4/04_ai-security-privacy.md\" )",
+      "Bash(\"public/docs/level5/01_ai-corporate-strategy.md\" )",
+      "Bash(\"public/docs/level5/02_investment-roi-measurement.md\" )",
+      "Bash(\"public/docs/level5/03_organization-culture-change.md\" )",
+      "Bash(\"public/docs/level5/04_ai-governance-ethics.md\" )",
+      "Bash(\"public/docs/career/01_monetization-roadmap.md\" )",
+      "Bash(\"public/docs/career/02_portfolio-guide.md\" )",
+      "Bash(\"public/docs/career/03_client-acquisition.md\")",
+      "Bash(do)",
+      "Bash(if [ -f \"$f\" ])",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(else)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(npm run build:*)"
     ],
-    "deny": [],
-    "ask": []
-  }
+    "deny": []
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "supabase",
+    "nanobanana",
+    "claude-flow@alpha",
+    "ruv-swarm",
+    "flow-nexus"
+  ]
 }

@@ -26,14 +26,14 @@ export const curriculum: Section[] = [
       {
         id: 'getting-started',
         title: 'はじめに：稼げるAI人材への道',
-        path: '/docs/level0/00_getting-started.md',
+        path: 'level0/00_getting-started.md',
         duration: '30分',
         level: 'start'
       },
       {
         id: 'ai-services-guide',
         title: 'AIサービス完全ガイド',
-        path: '/docs/level0/01_ai-services-guide.md',
+        path: 'level0/01_ai-services-guide.md',
         duration: '1時間',
         level: 'start'
       }
@@ -46,38 +46,38 @@ export const curriculum: Section[] = [
     targetAudience: 'AIに初めて触れる、または知識が断片的なビジネスパーソン、学生',
     duration: '4週間（週10時間程度の学習を想定）',
     items: [
-      { 
-        id: 'ai-literacy-and-ethics', 
-        title: 'AIリテラシーと倫理', 
-        path: '/docs/level1/01_ai-literacy-and-ethics.md',
+      {
+        id: 'ai-literacy-and-ethics',
+        title: 'AIリテラシーと倫理',
+        path: 'level1/01_ai-literacy-and-ethics.md',
         duration: '1週目',
         level: 'beginner'
       },
-      { 
-        id: 'prompt-engineering-basics', 
-        title: 'プロンプトエンジニアリング入門', 
-        path: '/docs/level1/02_prompt-engineering-basics.md',
+      {
+        id: 'prompt-engineering-basics',
+        title: 'プロンプトエンジニアリング入門',
+        path: 'level1/02_prompt-engineering-basics.md',
         duration: '2週目',
         level: 'beginner'
       },
-      { 
-        id: 'business-efficiency', 
-        title: '業務効率化の実践', 
-        path: '/docs/level1/03_business-efficiency.md',
+      {
+        id: 'business-efficiency',
+        title: '業務効率化の実践',
+        path: 'level1/03_business-efficiency.md',
         duration: '3週目',
         level: 'beginner'
       },
       {
         id: 'human-skills-integration',
         title: 'ヒューマンスキルとの融合',
-        path: '/docs/level1/04_human-skills-integration.md',
+        path: 'level1/04_human-skills-integration.md',
         duration: '4週目',
         level: 'beginner'
       },
       {
         id: 'hands-on-exercises-1',
         title: '実践演習：手を動かして学ぶ',
-        path: '/docs/level1/05_hands-on-exercises.md',
+        path: 'level1/05_hands-on-exercises.md',
         duration: '5週目',
         level: 'beginner'
       }
@@ -90,38 +90,38 @@ export const curriculum: Section[] = [
     targetAudience: 'AIツールの基本操作はできるが、より体系的な活用法を学びたい企画職、マーケターなど',
     duration: '6週間（週10時間程度の学習を想定）',
     items: [
-      { 
-        id: 'advanced-prompt-engineering', 
-        title: '高度なプロンプトエンジニアリング', 
-        path: '/docs/level2/01_advanced-prompt-engineering.md',
+      {
+        id: 'advanced-prompt-engineering',
+        title: '高度なプロンプトエンジニアリング',
+        path: 'level2/01_advanced-prompt-engineering.md',
         duration: '1週目',
         level: 'intermediate'
       },
-      { 
-        id: 'data-analysis-insights', 
-        title: 'データ分析とインサイト抽出', 
-        path: '/docs/level2/02_data-analysis-insights.md',
+      {
+        id: 'data-analysis-insights',
+        title: 'データ分析とインサイト抽出',
+        path: 'level2/02_data-analysis-insights.md',
         duration: '2-3週目',
         level: 'intermediate'
       },
-      { 
-        id: 'process-automation', 
-        title: '業務プロセスの自動化', 
-        path: '/docs/level2/03_process-automation.md',
+      {
+        id: 'process-automation',
+        title: '業務プロセスの自動化',
+        path: 'level2/03_process-automation.md',
         duration: '4-5週目',
         level: 'intermediate'
       },
       {
         id: 'business-planning-communication',
         title: 'AI時代のビジネス企画と発信',
-        path: '/docs/level2/04_business-planning-communication.md',
+        path: 'level2/04_business-planning-communication.md',
         duration: '6週目',
         level: 'intermediate'
       },
       {
         id: 'hands-on-exercises-2',
         title: '実践演習：案件レベルの実践',
-        path: '/docs/level2/05_hands-on-exercises.md',
+        path: 'level2/05_hands-on-exercises.md',
         duration: '7週目',
         level: 'intermediate'
       }
@@ -137,28 +137,28 @@ export const curriculum: Section[] = [
       {
         id: 'custom-ai-development',
         title: 'カスタムAI開発・実装',
-        path: '/docs/level3/01_custom-ai-development.md',
+        path: 'level3/01_custom-ai-development.md',
         duration: '1-2週目',
         level: 'advanced'
       },
       {
         id: 'ai-team-leadership',
         title: 'AIチームリーダーシップ',
-        path: '/docs/level3/02_ai-team-leadership.md',
+        path: 'level3/02_ai-team-leadership.md',
         duration: '3-4週目',
         level: 'advanced'
       },
       {
         id: 'ai-business-strategy',
         title: 'AIビジネス戦略・事業創造',
-        path: '/docs/level3/03_ai-business-strategy.md',
+        path: 'level3/03_ai-business-strategy.md',
         duration: '5-6週目',
         level: 'advanced'
       },
       {
         id: 'ai-society-impact',
         title: 'AI社会実装とインパクト',
-        path: '/docs/level3/04_ai-society-impact.md',
+        path: 'level3/04_ai-society-impact.md',
         duration: '7-8週目',
         level: 'advanced'
       },
@@ -174,28 +174,28 @@ export const curriculum: Section[] = [
       {
         id: 'ai-infrastructure-architecture',
         title: 'AIインフラストラクチャ設計',
-        path: '/docs/level4/01_ai-infrastructure-architecture.md',
+        path: 'level4/01_ai-infrastructure-architecture.md',
         duration: '1-2週目',
         level: 'engineer'
       },
       {
         id: 'advanced-ml-engineering',
         title: '高度な機械学習エンジニアリング',
-        path: '/docs/level4/02_advanced-ml-engineering.md',
+        path: 'level4/02_advanced-ml-engineering.md',
         duration: '3-4週目',
         level: 'engineer'
       },
       {
         id: 'production-ai-systems',
         title: '本番AIシステム構築',
-        path: '/docs/level4/03_production-ai-systems.md',
+        path: 'level4/03_production-ai-systems.md',
         duration: '5-7週目',
         level: 'engineer'
       },
       {
         id: 'ai-security-privacy',
         title: 'AIセキュリティとプライバシー',
-        path: '/docs/level4/04_ai-security-privacy.md',
+        path: 'level4/04_ai-security-privacy.md',
         duration: '8-10週目',
         level: 'engineer'
       },
@@ -211,28 +211,28 @@ export const curriculum: Section[] = [
       {
         id: 'ai-corporate-strategy',
         title: 'AI経営戦略',
-        path: '/docs/level5/01_ai-corporate-strategy.md',
+        path: 'level5/01_ai-corporate-strategy.md',
         duration: '1週目',
         level: 'executive'
       },
       {
         id: 'investment-roi-measurement',
         title: 'AI投資とROI測定',
-        path: '/docs/level5/02_investment-roi-measurement.md',
+        path: 'level5/02_investment-roi-measurement.md',
         duration: '2週目',
         level: 'executive'
       },
       {
         id: 'organization-culture-change',
         title: '組織文化変革',
-        path: '/docs/level5/03_organization-culture-change.md',
+        path: 'level5/03_organization-culture-change.md',
         duration: '3週目',
         level: 'executive'
       },
       {
         id: 'ai-governance-ethics',
         title: 'AIガバナンスと倫理',
-        path: '/docs/level5/04_ai-governance-ethics.md',
+        path: 'level5/04_ai-governance-ethics.md',
         duration: '4週目',
         level: 'executive'
       },
@@ -248,21 +248,21 @@ export const curriculum: Section[] = [
       {
         id: 'monetization-roadmap',
         title: '収益化ロードマップ',
-        path: '/docs/career/01_monetization-roadmap.md',
+        path: 'career/01_monetization-roadmap.md',
         duration: '45分',
         level: 'career'
       },
       {
         id: 'portfolio-guide',
         title: 'ポートフォリオ構築ガイド',
-        path: '/docs/career/02_portfolio-guide.md',
+        path: 'career/02_portfolio-guide.md',
         duration: '60分',
         level: 'career'
       },
       {
         id: 'client-acquisition',
         title: '案件獲得実践ガイド',
-        path: '/docs/career/03_client-acquisition.md',
+        path: 'career/03_client-acquisition.md',
         duration: '90分',
         level: 'career'
       }
@@ -284,6 +284,15 @@ export const getDocById = (id: string): DocItem | undefined => {
     if (item) return item;
   }
   return undefined;
+};
+
+/**
+ * 指定されたドキュメントが属するセクションを取得
+ */
+export const getSectionByDocId = (docId: string): Section | undefined => {
+  return curriculum.find((section) =>
+    section.items.some((item) => item.id === docId)
+  );
 };
 
 /**

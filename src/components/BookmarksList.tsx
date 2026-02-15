@@ -1,9 +1,11 @@
-import { useNavigate } from 'react-router-dom';
+'use client';
+
+import { useRouter } from 'next/navigation';
 import { useNotes } from '../hooks/useNotes';
 import './BookmarksList.css';
 
 export const BookmarksList = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const { bookmarks, deleteBookmark } = useNotes();
 
   const formatDate = (dateString: string) => {
@@ -16,7 +18,7 @@ export const BookmarksList = () => {
   };
 
   const handleNavigate = (chapterId: string) => {
-    navigate(`/doc/${chapterId}`);
+    router.push(`/doc/${chapterId}`);
   };
 
   if (bookmarks.length === 0) {

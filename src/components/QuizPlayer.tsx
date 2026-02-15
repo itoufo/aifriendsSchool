@@ -1,5 +1,7 @@
+'use client';
+
 import { useState, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import type { Quiz, QuizQuestion, QuizAnswer, QuizResult } from '../data/quiz.types';
 import type { DocItem } from '../data/curriculum';
 import './QuizPlayer.css';
@@ -8,13 +10,13 @@ const PASS_THRESHOLD = 80; // 合格ライン（%）
 
 interface QuizPlayerProps {
   quiz: Quiz;
-  nextDoc?: DocItem;
+  nextDoc?: Pick<DocItem, 'id' | 'title'>;
   onComplete?: (passed: boolean) => void;
   onClose?: () => void;
 }
 
 export function QuizPlayer({ quiz, nextDoc, onComplete, onClose }: QuizPlayerProps) {
-  const navigate = useNavigate();
+  const router = useRouter();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<QuizAnswer[]>([]);
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
@@ -99,9 +101,9 @@ export function QuizPlayer({ quiz, nextDoc, onComplete, onClose }: QuizPlayerPro
   const handleNextChapter = useCallback(() => {
     if (nextDoc) {
       onClose?.();
-      navigate(`/doc/${nextDoc.id}`);
+      router.push(`/doc/${nextDoc.id}`);
     }
-  }, [nextDoc, navigate, onClose]);
+  }, [nextDoc, router, onClose]);
 
   if (isCompleted && result) {
     const isPassed = result.score >= PASS_THRESHOLD;

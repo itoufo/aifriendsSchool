@@ -1,10 +1,13 @@
-import { Link } from 'react-router-dom';
+'use client';
+
+import Link from 'next/link';
 import { curriculum } from '../data/curriculum';
 import { BookmarksList } from '../components/BookmarksList';
 import { NotesList } from '../components/NotesList';
 import { useProgress } from '../hooks/useProgress';
 import { ProgressBar } from '../components/ProgressBar';
 import './HomePage.css';
+
 
 // レベルごとのサムネイル画像マッピング
 const levelThumbnails: Record<number, string> = {
@@ -43,13 +46,13 @@ export const HomePage = () => {
             <span className="badge">📚 完全体系化</span>
           </div>
           <div className="hero-cta">
-            <Link to="/doc/ai-literacy-and-ethics" className="cta-btn primary">
+            <Link href="/doc/ai-literacy-and-ethics" className="cta-btn primary">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <polygon points="5,3 19,12 5,21" />
               </svg>
               今すぐ始める
             </Link>
-            <Link to="/doc/getting-started" className="cta-btn secondary">
+            <Link href="/doc/getting-started" className="cta-btn secondary">
               カリキュラムを見る
             </Link>
           </div>
@@ -88,7 +91,7 @@ export const HomePage = () => {
               <ul className="level-items">
                 {section.items.slice(0, 2).map((item) => (
                   <li key={item.id}>
-                    <Link to={`/doc/${item.id}`}>{item.title}</Link>
+                    <Link href={`/doc/${item.id}`}>{item.title}</Link>
                   </li>
                 ))}
                 {section.items.length > 2 && (
@@ -195,7 +198,7 @@ export const HomePage = () => {
           <div className="start-option">
             <h3>🎯 レベル診断から始める</h3>
             <p>あなたの現在のAIリテラシーレベルを診断し、最適な学習パスを提案します</p>
-            <Link to="/doc/ai-literacy-and-ethics" className="start-btn primary">
+            <Link href="/doc/ai-literacy-and-ethics" className="start-btn primary">
               レベル1から始める
             </Link>
           </div>
@@ -203,10 +206,10 @@ export const HomePage = () => {
             <h3>📚 カリキュラム全体を確認</h3>
             <p>5つのレベル構成と学習ロードマップを詳しく確認してから始めましょう</p>
             <div className="start-buttons">
-              <Link to="/doc/ai-literacy-and-ethics" className="start-btn secondary">
+              <Link href="/doc/ai-literacy-and-ethics" className="start-btn secondary">
                 Lv.1 初心者
               </Link>
-              <Link to="/doc/advanced-prompt-engineering" className="start-btn secondary">
+              <Link href="/doc/advanced-prompt-engineering" className="start-btn secondary">
                 Lv.2 中級者
               </Link>
             </div>

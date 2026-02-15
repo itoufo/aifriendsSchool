@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import { useNotes } from '../hooks/useNotes';
 import './NotesPanel.css';

@@ -51,6 +51,11 @@
   color: #1a1a2e;
   margin: 0;
   flex: 1;
+  text-decoration: none;
+}
+
+.top-bar-title:hover {
+  text-decoration: underline;
 }
 
 .top-bar-logo {

@@ -1,65 +1,65 @@
+'use client';
+
 import { useState, useEffect } from 'react';
-import { useParams, Navigate } from 'react-router-dom';
-import { MarkdownViewer } from '../components/MarkdownViewer';
-import { QuizModal } from '../components/QuizModal';
-import { NotesPanel } from '../components/NotesPanel';
-import { getDocById, getNextDoc } from '../data/curriculum';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import { QuizModal } from './QuizModal';
+import { NotesPanel } from './NotesPanel';
 import { QuizService } from '../services/quizService';
 import { useProgress } from '../hooks/useProgress';
 import type { Quiz } from '../data/quiz.types';
+import './MarkdownViewer.css';
 import './DocPage.css';
 
-export const DocPage = () => {
-  const { docId } = useParams<{ docId: string }>();
+interface DocPageClientProps {
+  docId: string;
+  title: string;
+  markdownContent: string;
+  nextDocId?: string;
+  nextDocTitle?: string;
+}
+
+export const DocPageClient = ({
+  docId,
+  title,
+  markdownContent,
+  nextDocId,
+  nextDocTitle,
+}: DocPageClientProps) => {
   const [isQuizOpen, setIsQuizOpen] = useState(false);
   const [isNotesOpen, setIsNotesOpen] = useState(false);
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [loadingQuiz, setLoadingQuiz] = useState(true);
-  const { markAsVisited, updateTimeSpent, getChapterProgress, markAsCompleted } = useProgress();
+  const { markAsVisited, updateTimeSpent, getChapterProgress, markAsCompleted } =
+    useProgress();
 
   useEffect(() => {
-    if (docId) {
-      markAsVisited(docId);
-      // クイズを動的に読み込む
-      setLoadingQuiz(true);
-      QuizService.loadQuiz(docId)
-        .then(quizData => {
-          setQuiz(quizData);
-        })
-        .finally(() => {
-          setLoadingQuiz(false);
-        });
-    }
+    markAsVisited(docId);
+    setLoadingQuiz(true);
+    QuizService.loadQuiz(docId)
+      .then((quizData) => {
+        setQuiz(quizData);
+      })
+      .finally(() => {
+        setLoadingQuiz(false);
+      });
   }, [docId, markAsVisited]);
 
   useEffect(() => {
-    if (docId) {
-      return () => {
-        updateTimeSpent(docId);
-      };
-    }
+    return () => {
+      updateTimeSpent(docId);
+    };
   }, [docId, updateTimeSpent]);
 
-  if (!docId) {
-    return <Navigate to="/" replace />;
-  }
-
-  const doc = getDocById(docId);
   const progress = getChapterProgress(docId);
 
-  if (!doc) {
-    return (
-      <div className="not-found">
-        <h2>ページが見つかりません</h2>
-        <p>指定されたドキュメントは存在しません。</p>
-      </div>
-    );
-  }
-
-  const nextDoc = getNextDoc(docId);
+  const nextDoc =
+    nextDocId && nextDocTitle
+      ? { id: nextDocId, title: nextDocTitle, path: '' }
+      : undefined;
 
   const handleQuizComplete = (passed: boolean) => {
-    if (passed && docId) {
+    if (passed) {
       markAsCompleted(docId);
     }
   };
@@ -79,7 +79,14 @@ export const DocPage = () => {
         )}
       </div>
 
-      <MarkdownViewer filePath={doc.path} title={doc.title} />
+      <article className="markdown-viewer">
+        <h1 className="doc-title-bar">{title}</h1>
+        <div className="markdown-content">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {markdownContent}
+          </ReactMarkdown>
+        </div>
+      </article>
 
       {!loadingQuiz && quiz && (
         <div className="quiz-section">
@@ -112,13 +119,11 @@ export const DocPage = () => {
         />
       )}
 
-      {docId && (
-        <NotesPanel
-          chapterId={docId}
-          isOpen={isNotesOpen}
-          onClose={() => setIsNotesOpen(false)}
-        />
-      )}
+      <NotesPanel
+        chapterId={docId}
+        isOpen={isNotesOpen}
+        onClose={() => setIsNotesOpen(false)}
+      />
     </>
   );
 };

@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect } from 'react';
 import type { Quiz } from '../data/quiz.types';
 import type { DocItem } from '../data/curriculum';
@@ -6,7 +8,7 @@ import './QuizModal.css';
 
 interface QuizModalProps {
   quiz: Quiz;
-  nextDoc?: DocItem;
+  nextDoc?: Pick<DocItem, 'id' | 'title'>;
   isOpen: boolean;
   onClose: () => void;
   onComplete?: (passed: boolean) => void;

@@ -1,5 +1,8 @@
+'use client';
+
 import { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import { curriculum } from '../data/curriculum';
 import type { Section } from '../data/curriculum';
 import { useProgress } from '../hooks/useProgress';
@@ -12,8 +15,9 @@ interface SidebarProps {
   onClose: () => void;
 }
 
-const SectionItem = ({ section }: { section: Section }) => {
+const SectionItem = ({ section, onClose }: { section: Section; onClose: () => void }) => {
   const [isExpanded, setIsExpanded] = useState(true);
+  const pathname = usePathname();
 
   return (
     <div className="sidebar-section">
@@ -31,18 +35,21 @@ const SectionItem = ({ section }: { section: Section }) => {
       </button>
       {isExpanded && (
         <ul className="section-items">
-          {section.items.map((item) => (
-            <li key={item.id}>
-              <NavLink
-                to={`/doc/${item.id}`}
-                className={({ isActive }) =>
-                  `nav-link ${isActive ? 'active' : ''}`
-                }
-              >
-                {item.title}
-              </NavLink>
-            </li>
-          ))}
+          {section.items.map((item) => {
+            const href = `/doc/${item.id}`;
+            const isActive = pathname === href;
+            return (
+              <li key={item.id}>
+                <Link
+                  href={href}
+                  className={`nav-link ${isActive ? 'active' : ''}`}
+                  onClick={onClose}
+                >
+                  {item.title}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>
@@ -52,8 +59,10 @@ const SectionItem = ({ section }: { section: Section }) => {
 export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
   const { stats } = useProgress();
   const { bookmarks } = useNotes();
-  const navigate = useNavigate();
+  const router = useRouter();
+  const pathname = usePathname();
   const [showBookmarks, setShowBookmarks] = useState(false);
+
   return (
     <>
       <div
@@ -69,7 +78,7 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             </svg>
           </button>
         </div>
-        
+
         <div className="sidebar-progress">
           <ProgressBar
             current={stats.completedChapters}
@@ -79,11 +88,11 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             size="small"
           />
         </div>
-        
+
         <div className="sidebar-quick-links">
-          <NavLink
-            to="/"
-            className={({ isActive }) => `home-link ${isActive ? 'active' : ''}`}
+          <Link
+            href="/"
+            className={`home-link ${pathname === '/' ? 'active' : ''}`}
             onClick={onClose}
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -91,8 +100,8 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
               <polyline points="9 22 9 12 15 12 15 22"/>
             </svg>
             <span>ホーム</span>
-          </NavLink>
-          
+          </Link>
+
           <button
             className={`bookmarks-toggle ${showBookmarks ? 'expanded' : ''}`}
             onClick={() => setShowBookmarks(!showBookmarks)}
@@ -107,7 +116,7 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
               </svg>
             </span>
           </button>
-          
+
           {showBookmarks && (
             <div className="bookmarks-list-sidebar">
               {bookmarks.length === 0 ? (
@@ -118,7 +127,7 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                     key={bookmark.id}
                     className="bookmark-item-sidebar"
                     onClick={() => {
-                      navigate(`/doc/${bookmark.chapterId}`);
+                      router.push(`/doc/${bookmark.chapterId}`);
                       onClose();
                     }}
                   >
@@ -129,10 +138,10 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             </div>
           )}
         </div>
-        
+
         <nav className="sidebar-nav">
           {curriculum.map((section) => (
-            <SectionItem key={section.id} section={section} />
+            <SectionItem key={section.id} section={section} onClose={onClose} />
           ))}
         </nav>
       </aside>
