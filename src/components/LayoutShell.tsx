@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Sidebar } from './Sidebar';
 import { AppConfig } from '../config/app.config';
@@ -26,10 +27,16 @@ export const LayoutShell = ({ children }: { children: React.ReactNode }) => {
           <Link href="/" className="top-bar-title" aria-label="ホームへ">
             {AppConfig.branding.title}
           </Link>
-          <img
+          <Link href="/news" className="top-bar-news-link" aria-label="AIニュースへ">
+            AIニュース
+          </Link>
+          <Image
             src={AppConfig.branding.logo.src}
             alt={AppConfig.branding.logo.alt}
             className="top-bar-logo"
+            width={106}
+            height={36}
+            priority
           />
         </header>
         <main className="main-content">

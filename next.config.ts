@@ -10,6 +10,28 @@ const nextConfig: NextConfig = {
   // Next can mis-detect workspace root when multiple lockfiles exist on the machine.
   // Pin tracing root to this project to keep build output stable.
   outputFileTracingRoot: __dirname,
+  async headers() {
+    return [
+      {
+        source: '/docs/:path*',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, nofollow, noarchive',
+          },
+        ],
+      },
+      {
+        source: '/quizzes/:path*',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, nofollow, noarchive',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

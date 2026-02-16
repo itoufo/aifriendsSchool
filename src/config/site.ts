@@ -10,7 +10,7 @@ export const SITE = {
   name: 'AI Friends School',
   title: 'AI Friends School - 包括的AIスクールカリキュラム',
   description:
-    '初心者から経営者まで、5つのレベル別に体系的にAI活用能力を育成。真に「稼げる」人材、そして未来を創造できる人材になるための実践的教育プログラム。',
+    '初心者から経営者まで学べる5レベル教材と、実務に効くAIニュース解説を提供。AI活用を体系的に学べる学習メディア。',
   // Use `NEXT_PUBLIC_SITE_URL` in production deployments.
   url: normalizeSiteUrl(process.env.NEXT_PUBLIC_SITE_URL ?? DEFAULT_SITE_URL),
   locale: 'ja_JP',
@@ -25,4 +25,3 @@ export function absoluteUrl(path: string): string {
   if (path.startsWith('http://') || path.startsWith('https://')) return path;
   return `${base}${path.startsWith('/') ? path : `/${path}`}`;
 }
-

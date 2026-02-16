@@ -200,6 +200,112 @@
 }
 
 /* ========================================
+   Home News Section
+   ======================================== */
+.home-news-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-news-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.home-news-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.home-news-link {
+  color: #38bdf8;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-news-link:hover {
+  text-decoration: underline;
+}
+
+.home-news-grid {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.home-news-card {
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 16px;
+  padding: 1rem 1rem 1.1rem;
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.75) 0%, rgba(15, 23, 42, 0.92) 100%);
+}
+
+.home-news-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+  color: rgba(226, 232, 240, 0.75);
+  font-size: 0.82rem;
+}
+
+.home-news-category {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(56, 189, 248, 0.18);
+  color: #7dd3fc;
+  border-radius: 999px;
+  padding: 0.14rem 0.56rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-news-category:hover {
+  background: rgba(56, 189, 248, 0.28);
+}
+
+.home-news-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.12rem;
+  line-height: 1.5;
+}
+
+.home-news-card h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-news-card h3 a:hover {
+  color: #7dd3fc;
+}
+
+.home-news-card p {
+  margin: 0;
+  color: rgba(226, 232, 240, 0.82);
+  line-height: 1.7;
+}
+
+.home-news-read-more {
+  margin-top: 0.8rem;
+  display: inline-flex;
+  color: #38bdf8;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-news-read-more:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
    Level Overview Section
    ======================================== */
 .level-overview {
@@ -276,6 +382,7 @@
 .level-thumbnail-wrapper {
   overflow: hidden;
   position: relative;
+  height: 180px;
 }
 
 .level-thumbnail-wrapper::after {
@@ -384,6 +491,62 @@
   font-size: 0.85rem;
   font-style: italic;
   padding-left: 1rem;
+}
+
+/* ========================================
+   Curriculum Index Section
+   ======================================== */
+.curriculum-index {
+  padding: 5rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.curriculum-index h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.curriculum-index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.curriculum-index-card {
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.85) 100%);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 1.25rem;
+}
+
+.curriculum-index-card h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.curriculum-index-card ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.curriculum-index-card li {
+  margin-bottom: 0.5rem;
+}
+
+.curriculum-index-card a {
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.curriculum-index-card a:hover {
+  color: #38bdf8;
+  text-decoration: underline;
 }
 
 /* ========================================
@@ -657,6 +820,48 @@
 }
 
 /* ========================================
+   FAQ Section
+   ======================================== */
+.faq-section {
+  padding: 5rem 2rem 7rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.faq-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.faq-item {
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
+  padding: 1rem 1.1rem;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.faq-item p {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0.75rem 0 0;
+  line-height: 1.75;
+}
+
+/* ========================================
    Not Found
    ======================================== */
 .not-found {
@@ -736,9 +941,20 @@
   }
 
   .level-overview h2,
+  .home-news-header h2,
+  .curriculum-index h2,
   .features h2,
   .progress-overview h2,
   .quick-start h2 {
+    font-size: 1.75rem;
+  }
+
+  .home-news-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .faq-section h2 {
     font-size: 1.75rem;
   }
 

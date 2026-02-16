@@ -102,6 +102,18 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             <span>ホーム</span>
           </Link>
 
+          <Link
+            href="/news"
+            className={`home-link ${pathname.startsWith('/news') ? 'active' : ''}`}
+            onClick={onClose}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M4 5h16v14H4z" />
+              <path d="M8 9h8M8 13h8M8 17h5" />
+            </svg>
+            <span>AIニュース</span>
+          </Link>
+
           <button
             className={`bookmarks-toggle ${showBookmarks ? 'expanded' : ''}`}
             onClick={() => setShowBookmarks(!showBookmarks)}

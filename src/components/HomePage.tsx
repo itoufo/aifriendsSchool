@@ -1,7 +1,10 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { curriculum } from '../data/curriculum';
+import { formatNewsDate, getLatestNews } from '../data/news';
+import { SEO_FAQ_ITEMS } from '../config/seo';
 import { BookmarksList } from '../components/BookmarksList';
 import { NotesList } from '../components/NotesList';
 import { useProgress } from '../hooks/useProgress';
@@ -22,16 +25,20 @@ const levelThumbnails: Record<number, string> = {
 export const HomePage = () => {
   const { stats } = useProgress();
   const totalChapters = curriculum.reduce((acc, section) => acc + section.items.length, 0);
+  const latestNews = getLatestNews(3);
 
   return (
     <div className="home-page">
       {/* ヒーローセクション */}
       <section className="hero">
         <div className="hero-content">
-          <img
+          <Image
             src="/images/logo.png"
             alt="AI Friends School Logo"
             className="hero-logo"
+            width={250}
+            height={85}
+            priority
           />
           <h1>AI Friends School</h1>
           <h2 className="hero-subtitle">包括的AIスクールカリキュラム</h2>
@@ -64,19 +71,61 @@ export const HomePage = () => {
         </div>
       </section>
 
+      {/* AIニュースセクション */}
+      <section className="home-news-section">
+        <div className="home-news-header">
+          <h2>📰 AIニュース</h2>
+          <Link href="/news" className="home-news-link">
+            すべて見る →
+          </Link>
+        </div>
+        <p className="section-subtitle">
+          最新トレンドを実務目線で解説。教材と合わせて読むと理解が深まります。
+        </p>
+        <div className="home-news-grid">
+          {latestNews.map((article) => (
+            <article key={article.slug} className="home-news-card">
+              <div className="home-news-meta">
+                <Link
+                  href={`/news/category/${article.categorySlug}`}
+                  className="home-news-category"
+                >
+                  {article.category}
+                </Link>
+                <time dateTime={article.publishedAt}>
+                  {formatNewsDate(article.publishedAt)}
+                </time>
+              </div>
+              <h3>
+                <Link href={`/news/${article.slug}`}>{article.title}</Link>
+              </h3>
+              <p>{article.summary}</p>
+              <Link href={`/news/${article.slug}`} className="home-news-read-more">
+                記事を読む
+              </Link>
+            </article>
+          ))}
+        </div>
+      </section>
+
       {/* レベル概要セクション */}
       <section className="level-overview">
         <h2>5つのレベル構成</h2>
         <p className="section-subtitle">あなたの現在地から、AIマスターへの道を歩もう</p>
         <div className="levels-grid">
           {curriculum.map((section, index) => (
-            <div key={section.id} className={`level-card level-${index + 1}`}>
+            <div
+              key={section.id}
+              id={section.id}
+              className={`level-card level-${index + 1}`}
+            >
               <div className="level-thumbnail-wrapper">
-                <img
+                <Image
                   src={levelThumbnails[index + 1] || levelThumbnails[1]}
                   alt={section.title}
                   className="level-thumbnail"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="level-header">
@@ -101,6 +150,28 @@ export const HomePage = () => {
                 )}
               </ul>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 全カリキュラム一覧（内部リンク強化） */}
+      <section className="curriculum-index">
+        <h2>📚 全カリキュラム章一覧</h2>
+        <p className="section-subtitle">
+          すべての教材へ直接アクセスできます。気になる章から学習を始めてください。
+        </p>
+        <div className="curriculum-index-grid">
+          {curriculum.map((section) => (
+            <article key={section.id} className="curriculum-index-card">
+              <h3>{section.title}</h3>
+              <ul>
+                {section.items.map((item) => (
+                  <li key={item.id}>
+                    <Link href={`/doc/${item.id}`}>{item.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </article>
           ))}
         </div>
       </section>
@@ -214,6 +285,19 @@ export const HomePage = () => {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQセクション */}
+      <section className="faq-section">
+        <h2>❓ よくある質問</h2>
+        <div className="faq-list">
+          {SEO_FAQ_ITEMS.map((faq) => (
+            <details key={faq.question} className="faq-item">
+              <summary>{faq.question}</summary>
+              <p>{faq.answer}</p>
+            </details>
+          ))}
         </div>
       </section>
     </div>

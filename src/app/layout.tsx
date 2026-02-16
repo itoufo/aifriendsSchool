@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { LayoutShell } from '@/components/LayoutShell';
+import { BASE_SEO_KEYWORDS } from '@/config/seo';
 import { SITE } from '@/config/site';
 import '@/index.css';
 
@@ -19,7 +20,18 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
+  keywords: BASE_SEO_KEYWORDS,
+  authors: [{ name: SITE.name, url: SITE.url }],
+  creator: SITE.name,
+  publisher: SITE.name,
+  category: 'education',
+  classification: 'AI education',
   applicationName: SITE.name,
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   referrer: 'origin-when-cross-origin',
   alternates: {
     languages: {
@@ -52,6 +64,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     ...(SITE.twitterHandle ? { site: SITE.twitterHandle } : {}),
+    ...(SITE.twitterHandle ? { creator: SITE.twitterHandle } : {}),
     title: SITE.name,
     description: SITE.description,
     images: ['/twitter-image'],
@@ -70,6 +83,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
     shortcut: ['/favicon.svg'],
+  },
+  appleWebApp: {
+    title: SITE.name,
+    statusBarStyle: 'black-translucent',
   },
   manifest: '/manifest.webmanifest',
 };
